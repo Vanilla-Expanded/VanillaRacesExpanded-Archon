@@ -37,6 +37,7 @@
     <label>sear</label>
     <labelNoun>a sear</labelNoun>
     <description>A sear.</description>
+	<hediffClass>VREArchon.Hediff_Sear</hediffClass>
 	<displayWound>true</displayWound>
     <comps>
       <li Class="HediffCompProperties_TendDuration">

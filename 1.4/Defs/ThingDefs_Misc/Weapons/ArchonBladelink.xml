@@ -51,9 +51,6 @@
 			<li>Ultratech</li>
 		</weaponClasses>
 		<comps>
-			<li>
-				<compClass>CompQuality</compClass>
-			</li>
 			<li Class="CompProperties_BladelinkWeapon">
 				<biocodeOnEquip>true</biocodeOnEquip>
 			</li>

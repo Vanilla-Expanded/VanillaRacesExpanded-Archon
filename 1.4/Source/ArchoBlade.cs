@@ -37,6 +37,10 @@ namespace VREArchon
 
         public override IEnumerable<StatDrawEntry> SpecialDisplayStats()
         {
+            foreach (var stat in base.SpecialDisplayStats())
+            {
+                yield return stat;
+            }
             if (ability != null)
             {
                 yield return new StatDrawEntry(StatCategoryDefOf.Weapon_Melee, "VREA.GivesAbility".Translate(), ability.LabelCap, ability.description, 0);

@@ -21,15 +21,15 @@ namespace VREArchon
                     {
                         new Wound
                         {
-                            texture = "Pawn/Overlays/WoundSearA", displayPermanent = true,
+                            texture = "Pawn/Overlays/WoundSearA",
                         },
                         new Wound
                         {
-                            texture = "Pawn/Overlays/WoundSearB", displayPermanent = true
+                            texture = "Pawn/Overlays/WoundSearB"
                         },
                         new Wound
                         {
-                            texture = "Pawn/Overlays/WoundSearC", displayPermanent = true
+                            texture = "Pawn/Overlays/WoundSearC"
                         },
                     }
                 });
