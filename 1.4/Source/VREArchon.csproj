@@ -71,13 +71,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArchoBlade.cs" />
-    <Compile Include="HarmonyPatches\HediffComp_GetsPermanent_PreFinalizeInjury_Patch.cs" />
+    <Compile Include="Hediff_Sear.cs" />
     <Compile Include="ModCompatibility.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="VREArchonMod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VREA_DefOf.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="HarmonyPatches\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
