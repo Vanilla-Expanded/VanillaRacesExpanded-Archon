@@ -18,7 +18,6 @@
 		</graphicData>
 		<soundInteract>VREA_Interact_BladelinkArchoblade</soundInteract>
 		<meleeHitSound>VREA_MeleeHit_BladelinkArchoblade</meleeHitSound>
-		<smeltable>false</smeltable>
 		<tools>
 			<li>
 				<label>handle</label>
@@ -398,7 +397,7 @@
 				</graphics>
 			</li>
 		</comps>
-		<smeltable>true</smeltable>
+		<smeltable>false</smeltable>
 		<burnableByRecipe>true</burnableByRecipe>
 		<notifyMapRemoved>true</notifyMapRemoved>
 		<thingCategories>

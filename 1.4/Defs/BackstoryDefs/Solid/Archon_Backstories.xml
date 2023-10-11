@@ -350,7 +350,7 @@
 </BackstoryDef>
 
 <BackstoryDef>
-    <defName>VREA_VoidHarmonizer</defName>
+    <defName>VREA_VoidHarmonizer2</defName>
     <identifier>VoidHarmonizer</identifier>
     <slot>Adulthood</slot>
     <title>void harmonizer</title>
@@ -688,6 +688,7 @@
       <li><key>Social</key><value>2</value></li>
       <li><key>Artistic</key><value>2</value></li>
     </skillGains>
+    <spawnCategories><li>Archon</li></spawnCategories>
 </BackstoryDef>
 
 <BackstoryDef>
@@ -702,6 +703,7 @@
       <li><key>Animals</key><value>4</value></li>
       <li><key>Shooting</key><value>1</value></li>
     </skillGains>
+    <spawnCategories><li>Archon</li></spawnCategories>
 </BackstoryDef>
 
 <BackstoryDef>
@@ -715,6 +717,7 @@
       <li><key>Intellectual</key><value>4</value></li>
       <li><key>Social</key><value>3</value></li>
     </skillGains>
+    <spawnCategories><li>Archon</li></spawnCategories>
 </BackstoryDef>
 
 <BackstoryDef>
@@ -729,6 +732,7 @@
       <li><key>Shooting</key><value>2</value></li>
       <li><key>Crafting</key><value>1</value></li>
     </skillGains>
+    <spawnCategories><li>Archon</li></spawnCategories>
 </BackstoryDef>
 
 <BackstoryDef>
