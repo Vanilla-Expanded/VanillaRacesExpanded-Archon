@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef>
+		<defName>VRE_Transcendent</defName>
+		<label>transcendent</label>
+		<description>todo.</description>
+		<hediffClass>VREArchon.Hediff_Transcendent</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+	</HediffDef>
+</Defs>

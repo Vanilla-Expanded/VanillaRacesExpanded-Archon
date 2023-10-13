@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>VRE_Transcendent</defName>
+		<label>transcendent</label>
+		<description>todo.</description>
+		<iconPath>UI/Icons/Genes/Gene_Transcendent</iconPath>
+		<displayCategory>Archite</displayCategory>
+		<displayOrderInCategory>6001</displayOrderInCategory>
+		<biostatCpx>4</biostatCpx>
+		<biostatArc>1</biostatArc>
+		<biostatMet>0</biostatMet>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<hediffToWholeBody>VRE_Transcendent</hediffToWholeBody>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>VRE_InnatePsylink</defName>
+		<label>innate psylink</label>
+		<iconPath>UI/Icons/Genes/Gene_NaturalPsylink</iconPath>
+		<description>todo.</description>
+		<displayCategory>Archite</displayCategory>
+		<displayOrderInCategory>6002</displayOrderInCategory>
+		<biostatCpx>4</biostatCpx>
+		<biostatArc>1</biostatArc>
+		<biostatMet>0</biostatMet>
+	
+		<customEffectDescriptions>
+			<li>Losing this gene will make the colonist lose all psylink levels, though they will not forget the psycasts they have already learned.</li>			
+		</customEffectDescriptions>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				
+				<hediffsToBodyParts>
+					<li>
+						<hediff>PsychicAmplifier</hediff>
+						<bodyparts>
+							<li>Brain</li>
+							
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>
