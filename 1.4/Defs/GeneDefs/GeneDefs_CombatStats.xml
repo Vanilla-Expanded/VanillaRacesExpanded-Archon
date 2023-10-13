@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>VRE_FastMeleeHitter</defName>
+		<label>fast melee hitter</label>
+		<description>todo.</description>
+		<statFactors>
+			<VEF_MeleeAttackSpeedFactor>0.8</VEF_MeleeAttackSpeedFactor>
+		</statFactors>
+		<exclusionTags>
+			<li>MeleeAttackSpeed</li>
+		</exclusionTags>
+		<iconPath>UI/Icons/Genes/Gene_MeleeHitterFast</iconPath>
+		<displayCategory>Violence</displayCategory>
+		<displayOrderInCategory>1000</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+	</GeneDef>
+	<GeneDef>
+		<defName>VRE_SlowMeleeHitter</defName>
+		<label>slow melee hitter</label>
+		<description>todo.</description>
+		<statFactors>
+			<VEF_MeleeAttackSpeedFactor>1.25</VEF_MeleeAttackSpeedFactor>
+		</statFactors>
+		<exclusionTags>
+			<li>MeleeAttackSpeed</li>
+		</exclusionTags>
+		<iconPath>UI/Icons/Genes/Gene_MeleeHitterSlow</iconPath>
+		<displayCategory>Violence</displayCategory>
+		<displayOrderInCategory>1001</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+	</GeneDef>
+</Defs>

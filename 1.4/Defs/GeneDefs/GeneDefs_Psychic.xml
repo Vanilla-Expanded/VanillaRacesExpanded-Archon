@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>VRE_ExtremeMeditation</defName>
+		<label>extreme meditation</label>
+		<description>todo.</description>
+		<statFactors>
+			<MeditationFocusGain>1.5</MeditationFocusGain>
+		</statFactors>
+		<exclusionTags>
+			<li>MeditationSpeed</li>
+		</exclusionTags>
+		<iconPath>UI/Icons/Genes/Gene_MeditationExtreme</iconPath>
+		<displayCategory>Psychic</displayCategory>
+		<displayOrderInCategory>1000</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+	</GeneDef>
+	<GeneDef>
+		<defName>VRE_SwiftMeditation</defName>
+		<label>swift meditation</label>
+		<description>todo.</description>
+		<statFactors>
+			<MeditationFocusGain>1.2</MeditationFocusGain>
+		</statFactors>
+		<exclusionTags>
+			<li>MeditationSpeed</li>
+		</exclusionTags>
+		<iconPath>UI/Icons/Genes/Gene_MeditationSwift</iconPath>
+		<displayCategory>Psychic</displayCategory>
+		<displayOrderInCategory>1001</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+	</GeneDef>
+	<GeneDef>
+		<defName>VRE_SlowMeditation</defName>
+		<label>slow meditation</label>
+		<description>todo.</description>
+		<statFactors>
+			<MeditationFocusGain>0.5</MeditationFocusGain>
+		</statFactors>
+		<exclusionTags>
+			<li>MeditationSpeed</li>
+		</exclusionTags>
+		<iconPath>UI/Icons/Genes/Gene_MeditationSlow</iconPath>
+		<displayCategory>Psychic</displayCategory>
+		<displayOrderInCategory>1002</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+	</GeneDef>
+</Defs>
