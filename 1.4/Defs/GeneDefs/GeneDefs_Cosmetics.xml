@@ -31,9 +31,10 @@
 				<li>Things/Pawn/Humanlike/HeadAttachments/FacialSpots/FacialSpotsB</li>
 				<li>Things/Pawn/Humanlike/HeadAttachments/FacialSpots/FacialSpotsC</li>
 			</graphicPaths>
-			<drawOffsetNorth>(0, -0.002, 0)</drawOffsetNorth>
-			<drawOffsetSouth>(0, -0.002, 0)</drawOffsetSouth>
-			<drawOffsetEast>(0, -0.002, 0)</drawOffsetEast>
+			 <drawOffset>(0, -0.002, 0)</drawOffset>
+			<layer>PostSkin</layer>
+			<drawLoc>HeadMiddle</drawLoc>
+			<colorType>Skin</colorType>
 		</graphicData>
 		
 	</GeneDef>
