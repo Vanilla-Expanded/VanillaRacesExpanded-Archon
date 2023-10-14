@@ -32,4 +32,37 @@
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>0</biostatMet>
 	</GeneDef>
+	
+	<GeneDef>
+		<defName>VRE_FastShooter</defName>
+		<label>fast shooter</label>
+		<description>todo.</description>
+		<statFactors>
+			<VEF_RangeAttackSpeedFactor>0.8</VEF_RangeAttackSpeedFactor>
+		</statFactors>
+		<exclusionTags>
+			<li>RangedAttackSpeed</li>
+		</exclusionTags>
+		<iconPath>UI/Icons/Genes/Gene_RangedHitterFast</iconPath>
+		<displayCategory>Violence</displayCategory>
+		<displayOrderInCategory>1002</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+	</GeneDef>
+	<GeneDef>
+			<defName>VRE_SlowShooter</defName>
+		<label>slow shooter</label>
+		<description>todo.</description>
+		<statFactors>
+			<VEF_RangeAttackSpeedFactor>1.25</VEF_RangeAttackSpeedFactor>
+		</statFactors>
+		<exclusionTags>
+			<li>RangedAttackSpeed</li>
+		</exclusionTags>
+		<iconPath>UI/Icons/Genes/Gene_RangedHitterSlow</iconPath>
+		<displayCategory>Violence</displayCategory>
+		<displayOrderInCategory>1003</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+	</GeneDef>
 </Defs>

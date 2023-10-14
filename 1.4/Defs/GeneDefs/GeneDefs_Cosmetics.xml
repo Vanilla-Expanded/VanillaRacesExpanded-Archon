@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- Ears -->
+	<GeneDef ParentName="GeneEarsBase">
+		<defName>VRE_SerratedEars</defName>
+		<label>serrated ears</label>
+		<selectionWeight>0</selectionWeight>
+		<description>todo</description>
+		<iconPath>UI/Icons/Genes/Gene_EarSerrated</iconPath>
+		<graphicData>
+			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/SerratedEars/SerratedEars</graphicPath>
+			 <colorType>Skin</colorType>
+		</graphicData>
+		
+	</GeneDef>
+	
+	<!-- Misc -->
+	
+	<GeneDef>
+		<defName>VRE_FacialSpots</defName>
+		<label>facial spots</label>
+		
+		<description>todo.</description>
+		<biostatCpx>1</biostatCpx>
+		
+		<iconPath>UI/Icons/Genes/Gene_FacialSpots</iconPath>
+		<graphicData>
+			<graphicPaths>
+				<li>Things/Pawn/Humanlike/HeadAttachments/FacialSpots/FacialSpotsA</li>
+				<li>Things/Pawn/Humanlike/HeadAttachments/FacialSpots/FacialSpotsB</li>
+				<li>Things/Pawn/Humanlike/HeadAttachments/FacialSpots/FacialSpotsC</li>
+			</graphicPaths>
+			<drawOffsetNorth>(0, -0.002, 0)</drawOffsetNorth>
+			<drawOffsetSouth>(0, -0.002, 0)</drawOffsetSouth>
+			<drawOffsetEast>(0, -0.002, 0)</drawOffsetEast>
+		</graphicData>
+		
+	</GeneDef>
+	
+	
+	
+	
+</Defs>

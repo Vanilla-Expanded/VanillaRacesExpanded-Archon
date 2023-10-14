@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>VRE_Maniac</defName>
+		<label>maniac</label>
+		<description>todo.</description>
+		<forcedTraits>
+			<li>
+				<def>Psychopath</def>
+			</li>
+		</forcedTraits>
+		
+		<iconPath>UI/Icons/Genes/Gene_Maniac</iconPath>
+		<displayCategory>Mood</displayCategory>
+		<displayOrderInCategory>1000</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>3</biostatMet>
+	</GeneDef>
+	
+</Defs>

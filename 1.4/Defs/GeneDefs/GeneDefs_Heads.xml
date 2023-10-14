@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Heads -->
+	<GeneDef>
+		<defName>VRE_Leatherskin</defName>
+		<label>leatherskin</label>
+		<description>todo</description>
+		<biostatCpx>1</biostatCpx>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>1000</displayOrderInCategory>
+		<iconPath>UI/Icons/Genes/Gene_Leatherskin</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<forcedHeadTypes>
+			<li>VRE_Leatherskin_Average_Normal</li>
+			<li>VRE_Leatherskin_Narrow_Normal</li>
+			<li>VRE_Leatherskin_Gaunt_Normal</li>
+			<li>VRE_Leatherskin_Wide_Normal</li>
+			<li>VRE_LeatherskinFemale_Average_Normal</li>
+			<li>VRE_LeatherskinFemale_Narrow_Normal</li>
+			<li>VRE_LeatherskinFemale_Gaunt_Normal</li>
+			<li>VRE_LeatherskinFemale_Wide_Normal</li>
+		</forcedHeadTypes>
+		<exclusionTags>
+			<li>Fur</li>
+		</exclusionTags>
+		<statOffsets>
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		</statOffsets>
+		<missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+	</GeneDef>
+</Defs>

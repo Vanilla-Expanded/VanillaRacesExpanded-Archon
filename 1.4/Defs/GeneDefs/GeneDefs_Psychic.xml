@@ -48,4 +48,52 @@
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>0</biostatMet>
 	</GeneDef>
+	<GeneDef>
+		<defName>VRE_WeakEntropyCapacity</defName>
+		<label>weak entropy capacity</label>
+		<description>todo.</description>
+		<statFactors>
+			<PsychicEntropyMax>0.5</PsychicEntropyMax>
+		</statFactors>
+		<exclusionTags>
+			<li>PsychicEntropy</li>
+		</exclusionTags>
+		<iconPath>UI/Icons/Genes/Gene_EntropyCapacityWeak</iconPath>
+		<displayCategory>Psychic</displayCategory>
+		<displayOrderInCategory>1003</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+	</GeneDef>
+	<GeneDef>
+		<defName>VRE_HighEntropyCapacity</defName>
+		<label>high entropy capacity</label>
+		<description>todo.</description>
+		<statFactors>
+			<PsychicEntropyMax>1.25</PsychicEntropyMax>
+		</statFactors>
+		<exclusionTags>
+			<li>PsychicEntropy</li>
+		</exclusionTags>
+		<iconPath>UI/Icons/Genes/Gene_EntropyCapacityHigh</iconPath>
+		<displayCategory>Psychic</displayCategory>
+		<displayOrderInCategory>1004</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+	</GeneDef>
+	<GeneDef>
+		<defName>VRE_ExtremeEntropyCapacity</defName>
+		<label>extreme entropy capacity</label>
+		<description>todo.</description>
+		<statFactors>
+			<PsychicEntropyMax>1.5</PsychicEntropyMax>
+		</statFactors>
+		<exclusionTags>
+			<li>PsychicEntropy</li>
+		</exclusionTags>
+		<iconPath>UI/Icons/Genes/Gene_EntropyCapacityExtreme</iconPath>
+		<displayCategory>Psychic</displayCategory>
+		<displayOrderInCategory>1005</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+	</GeneDef>
 </Defs>

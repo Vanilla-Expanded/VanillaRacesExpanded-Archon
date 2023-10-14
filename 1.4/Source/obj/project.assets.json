@@ -108,7 +108,7 @@
           }
         },
         "runtime": {
-          "lib/net48/0Harmony.dll": {
+          "lib/net48/_._": {
             "related": ".xml"
           }
         }
@@ -221,7 +221,7 @@
           }
         },
         "runtime": {
-          "lib/net48/0Harmony.dll": {
+          "lib/net48/_._": {
             "related": ".xml"
           }
         }
@@ -334,7 +334,7 @@
           }
         },
         "runtime": {
-          "lib/net48/0Harmony.dll": {
+          "lib/net48/_._": {
             "related": ".xml"
           }
         }
@@ -447,7 +447,7 @@
           }
         },
         "runtime": {
-          "lib/net48/0Harmony.dll": {
+          "lib/net48/_._": {
             "related": ".xml"
           }
         }
@@ -647,6 +647,7 @@
             "version": "[1.4.*, )"
           },
           "Lib.Harmony": {
+            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "target": "Package",
             "version": "[2.2.2, )"
           }
