@@ -61,7 +61,8 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.4.*">
+    <PackageReference Include="Krafs.Rimworld.Ref">
+      <Version>1.4.3704</Version>
     </PackageReference>
     <PackageReference Include="Lib.Harmony">
       <Version>2.2.2</Version>
@@ -72,7 +73,7 @@
   <ItemGroup>
     <Compile Include="GameComponents\GameComponent_TranscendentPawns.cs" />
     <Compile Include="HarmonyPatches\InteractionWorker_Interacted.cs" />
-    <Compile Include="HarmonyPatches\MentalStateHandler_TryStartMentalState.cs" />
+    <Compile Include="HarmonyPatches\JobGiver_SocialFighting_TryGiveJob.cs" />
     <Compile Include="Things\ArchoBlade.cs" />
     <Compile Include="Hediffs\Hediff_Sear.cs" />
     <Compile Include="Hediffs\Hediff_Transcendent.cs" />

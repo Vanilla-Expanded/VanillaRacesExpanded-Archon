@@ -3,6 +3,8 @@ using RimWorld;
 using Verse;
 using UnityEngine;
 using System.Collections.Generic;
+using Verse.Noise;
+using static Mono.Security.X509.X520;
 
 
 namespace VREArchon
@@ -14,7 +16,10 @@ namespace VREArchon
         public ThingOwner innerContainer = null;
         protected bool contentsKnown;
         public int tickCounter = 0;
-        public int tickInterval = 2000;
+        public int tickInterval = thirtyDaysInTicks;
+
+        public const int thirtyDaysInTicks = 1800000;
+        public const int sixtyDaysInTicks = 3600000;
 
         public IThingHolder ParentHolder => null;
 
@@ -22,6 +27,8 @@ namespace VREArchon
         {
             base.ExposeData();
             Scribe_Deep.Look<ThingOwner>(ref this.innerContainer, "innerContainer", new object[] { this });
+            Scribe_Values.Look<int>(ref tickInterval, "tickInterval");
+            Scribe_Values.Look<int>(ref tickCounter, "tickCounter");
 
         }
         public GameComponent_TranscendentPawns()
@@ -82,16 +89,31 @@ namespace VREArchon
         public override void GameComponentTick()
         {
             tickCounter++;
+
             if ((tickCounter > tickInterval))
             {
                 if (innerContainer.Count > 0)
                 {
-                    Log.Message(innerContainer.ToStringSafeEnumerable());
-                }
+                   Pawn pawn = innerContainer.RandomElement() as Pawn;
+                    if(pawn!=null)
+                    {
+                        Map map = Find.AnyPlayerHomeMap;
+                        TryFindEntryCell(map, out IntVec3 cell);
+                        GenSpawn.Spawn(pawn, cell, map);
+                        ChoiceLetter let = LetterMaker.MakeLetter("VREA_ReturnsLabel".Translate(pawn.Name), "VREA_Returns".Translate(pawn.Name), LetterDefOf.PositiveEvent,pawn);
+                        Find.LetterStack.ReceiveLetter(let);
+                    }
 
+                }
+                tickInterval = new IntRange(thirtyDaysInTicks, sixtyDaysInTicks).RandomInRange;
                 tickCounter = 0;
             }
 
+        }
+
+        private bool TryFindEntryCell(Map map, out IntVec3 cell)
+        {
+            return CellFinder.TryFindRandomEdgeCellWith((IntVec3 c) => map.reachability.CanReachColony(c) && !c.Fogged(map), map, CellFinder.EdgeRoadChance_Neutral, out cell);
         }
 
 

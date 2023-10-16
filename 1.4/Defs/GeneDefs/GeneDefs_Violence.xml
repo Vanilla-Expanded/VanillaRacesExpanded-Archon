@@ -8,6 +8,10 @@
 		<aggroMentalBreakSelectionChanceFactor>999</aggroMentalBreakSelectionChanceFactor>
 		<prisonBreakMTBFactor>0.2</prisonBreakMTBFactor>
 		<displayOrderInCategory>21</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Social fight guaranteed on insult or slight.</li>
+			<li>Will use weapons in social fight.</li>
+		</customEffectDescriptions>
 		<biostatMet>3</biostatMet>
 		<exclusionTags>
 			<li>Aggressive</li>

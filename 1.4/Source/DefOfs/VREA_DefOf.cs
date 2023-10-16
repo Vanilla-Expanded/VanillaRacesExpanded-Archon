@@ -8,7 +8,7 @@ namespace VREArchon
     {
         public static HediffDef VREA_Sear;
         public static GeneDef VRE_Aggression_ExtremelyAggressive;
-        public static MentalStateDef VRE_SocialFighting;
         public static InteractionDef Slight;
+        public static JobDef VRE_ArmedSocialFight;
     }
 }

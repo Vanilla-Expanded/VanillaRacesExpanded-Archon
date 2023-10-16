@@ -26,7 +26,7 @@ namespace VREArchon
             {
                 if(__instance.interaction == InteractionDefOf.Insult || __instance.interaction == VREA_DefOf.Slight) {
 
-                    recipient.mindState.mentalStateHandler.TryStartMentalState(VREA_DefOf.VRE_SocialFighting,null,false,false,initiator);
+                    recipient.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.SocialFighting,null,false,false,initiator);
 
                 }
             }

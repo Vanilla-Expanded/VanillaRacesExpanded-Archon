@@ -2,5 +2,6 @@
 <LanguagData>
 
 	<VREA.GivesAbility>Gives ability</VREA.GivesAbility>
-	
+	<VREA_ReturnsLabel>{0} returns</VREA_ReturnsLabel>
+	<VREA_Returns>{0} returns</VREA_Returns>
 </LanguagData>
