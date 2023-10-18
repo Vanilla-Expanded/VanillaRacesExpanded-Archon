@@ -35,6 +35,7 @@
 			<layer>PostSkin</layer>
 			<drawLoc>HeadMiddle</drawLoc>
 			<colorType>Skin</colorType>
+			<useSkinShader>true</useSkinShader>
 		</graphicData>
 		
 	</GeneDef>
