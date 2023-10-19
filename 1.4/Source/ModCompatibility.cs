@@ -11,11 +11,7 @@ namespace VREArchon
         public static AbilityDef RandomPsycastDef()
         {
             return DefDatabase<AbilityDef>.AllDefs.Where(x => VanillaPsycastsExpanded.AbilityExtensionPsycastUtility
-            .Psycast(x) is VanillaPsycastsExpanded.AbilityExtension_Psycast extension 
-            && extension.path.requiredGene is null 
-            && extension.path.requiredMeme is null 
-            && extension.path.requiredMechanitor is false 
-            && extension.path.requiredFocus is null).RandomElement();
+            .Psycast(x) != null).RandomElement();
         }
 
         public static bool PawnIsPsycaster(Pawn pawn)
