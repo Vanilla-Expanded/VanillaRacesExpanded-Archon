@@ -11,7 +11,7 @@
     <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">NamerWeaponArchon</leaderTitleMaker>
     <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
     <allowedPlaceTags>
-      <li>Archon</li>
+      <li>OriginTribal</li>
     </allowedPlaceTags>
     <iconPath>UI/Icons/CultureIcon/Transcendent_Culture</iconPath>
     <preferredWeaponClasses>
