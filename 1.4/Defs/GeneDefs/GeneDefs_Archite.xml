@@ -19,7 +19,7 @@
 	
 	<GeneDef>
 		<defName>VRE_InnatePsylink</defName>
-		<label>innate psylink</label>
+		<label>natural psylink</label>
 		<iconPath>UI/Icons/Genes/Gene_NaturalPsylink</iconPath>
 		<description>todo.</description>
 		<displayCategory>Archite</displayCategory>

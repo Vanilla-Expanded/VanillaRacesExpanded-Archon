@@ -40,6 +40,21 @@
 		
 	</GeneDef>
 	
+	<!-- Hair -->
+	
+	<GeneDef ParentName="GeneHairStyleBase">
+		<defName>VRE_DreadHair</defName>
+		<label>dread hair</label>
+		<description>todo.</description>
+		<iconPath>UI/Icons/Genes/Gene_DreadHair</iconPath>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>VRE_ArchonHairs</li>
+			</tags>
+		</hairTagFilter>
+	</GeneDef>
+	
 	
 	
 	

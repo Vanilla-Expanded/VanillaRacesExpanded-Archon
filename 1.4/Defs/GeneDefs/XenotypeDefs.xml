@@ -11,16 +11,20 @@
 		<genes>
 			<li>VRE_Transcendent</li>
 			<li>VRE_InnatePsylink</li>
+			
 			<li>VRE_Aggression_ExtremelyAggressive</li>
 			<li>VRE_FastMeleeHitter</li>
 			<li>VRE_ExtremeMeditation</li>
 			<li>VRE_HighEntropyCapacity</li>
 			<li>VRE_Maniac</li>
 			<li>VRE_SlowShooter</li>
+			<li>VRE_Leatherskin</li>
 			<li>VRE_LongPregnancy</li>
+			
 			<li>VRE_SerratedEars</li>
 			<li>VRE_FacialSpots</li>
-			<li>VRE_Leatherskin</li>
+			<li>VRE_DreadHair</li>
+			<li>Skin_PaleYellow</li>
 		</genes>
 	</XenotypeDef>
 	

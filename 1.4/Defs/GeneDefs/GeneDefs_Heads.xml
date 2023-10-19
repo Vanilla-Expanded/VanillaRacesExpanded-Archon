@@ -10,6 +10,10 @@
 		<displayOrderInCategory>1000</displayOrderInCategory>
 		<iconPath>UI/Icons/Genes/Gene_Leatherskin</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<graphicData>
+			<fur>VRE_Leatherskin</fur>
+			
+		</graphicData>
 		<forcedHeadTypes>
 			<li>VRE_Leatherskin_Average_Normal</li>
 			<li>VRE_Leatherskin_Narrow_Normal</li>
@@ -28,5 +32,10 @@
 			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
 		</statOffsets>
 		<missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<useSkinColorForFur>true</useSkinColorForFur>
+			</li>
+		</modExtensions>
 	</GeneDef>
 </Defs>
