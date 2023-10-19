@@ -5,10 +5,11 @@
     <defName>Transcendent</defName>
     <label>transcendent</label>
     <description>A narrow collection of cultures from another dimension.</description>
+	<pawnNameMaker>NamerPersonTranscendent</pawnNameMaker>
     <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoGlobal</ideoNameMaker>
-    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerWeaponArchon</deityNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerPersonTranscendent</deityNameMaker>
     <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerAstropolitan</deityTypeMaker>
-    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">NamerWeaponArchon</leaderTitleMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Corunan</leaderTitleMaker>
     <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
     <allowedPlaceTags>
       <li>OriginTribal</li>
