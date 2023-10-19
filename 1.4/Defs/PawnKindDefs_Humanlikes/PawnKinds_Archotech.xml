@@ -45,6 +45,11 @@
       </li>
     </skills>
   </PawnKindDef>
+    <xenotypeSet>
+      <xenotypeChances>
+        <VRE_Archon>999</VRE_Archon>
+      </xenotypeChances>
+    </xenotypeSet>
   <defaultFactionType>VRE_Archons</defaultFactionType>
 
 </Defs>
