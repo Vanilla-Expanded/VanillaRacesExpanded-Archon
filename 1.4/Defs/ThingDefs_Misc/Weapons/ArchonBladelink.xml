@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BaseWeapon">
 		<defName>VREA_MeleeWeapon_ArchobladeBladelink</defName>
 		<label>archoblade</label>
-		<description>text.todo</description>
+		<description>An ethereal weapon forged in the enigmatic crucibles of archotech, the Archoblade is a fusion of unknown materials and arcane science and has the uncanny ability to phase through flesh, leaving behind agonizing scars by skipping tissue out of existence.\n\nArchoblade amplifies the psychic prowess of its bearer, resonating only with those who bear the archotech’s celestial touch. Archoblades are often imbued with powerful psycasts, and are almost always wielded exclusively by the enigmatic archons.</description>
 		<thingClass>VREArchon.ArchoBlade</thingClass>
 		<statBases>
 			<MarketValue>6700</MarketValue>
