@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<HediffDef>
 		<defName>VRE_Transcendent</defName>
@@ -10,4 +10,30 @@
 		<isBad>false</isBad>
 		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
 	</HediffDef>
+
+	<HediffDef>
+		<defName>VREA_PsychicallyWarped</defName>
+		<label>psychically warped</label>
+		<description>Armor is psychically stripped to 0. Upon an impact of psychic throw, this character will detonate in a small radius.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<comps>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>VREA_Warp</stateEffecter>
+			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>720~720</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<ArmorRating_Sharp>0</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0</ArmorRating_Blunt>
+					<ArmorRating_Heat>0</ArmorRating_Heat>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
 </Defs>

@@ -49,5 +49,108 @@
 			</li>
 		</modExtensions>
 	</VFECore.Abilities.AbilityDef>
+	
+	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VREA_PsychicThrow</defName>
+		<label>psychic throw</label>
+		<description>text.todo</description>
+		<iconPath>UI/Psycasts/PsychicThrow</iconPath>
+		<abilityClass>VREArchon.Ability_PsychicThrow</abilityClass>
+		<needsTicking>True</needsTicking>
+		<castTime>15</castTime>
+		<castSound>VREA_PsychicThrow_Cast</castSound>
+		<range>22.9</range>
+		<power>8</power>
+		<targetingParameters>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetBuildings>true</canTargetBuildings>
+			<canTargetMechs>true</canTargetMechs>
+		</targetingParameters>
+		<targetMode>Pawn</targetMode>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VREA_Transcendent</path>
+				<level>2</level>
+				<order>1</order>
+				<psyfocusCost>0.01</psyfocusCost>
+				<entropyGain>32</entropyGain>
+				<prerequisites>
+					<li>VPEA_Shortskip</li>
+				</prerequisites>
+			</li>
+			<li Class="VFECore.Abilities.AbilityExtension_Projectile">
+				<projectile>VREA_PsychicThrow</projectile>
+				<hitFlags>All</hitFlags>
+			</li>
+		</modExtensions>
+	</VFECore.Abilities.AbilityDef>
+
+	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VREA_PsychicWarp</defName>
+		<label>psychic warp</label>
+		<description>text.todo</description>
+		<iconPath>UI/Psycasts/PsychicWarp</iconPath>
+		<abilityClass>VREArchon.Ability_PsychicThrow</abilityClass>
+		<needsTicking>True</needsTicking>
+		<castTime>15</castTime>
+		<castSound>VREA_PsychicWarp_Cast</castSound>
+		<range>22.9</range>
+		<targetingParameters>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetBuildings>true</canTargetBuildings>
+			<canTargetMechs>true</canTargetMechs>
+		</targetingParameters>
+		<targetMode>Pawn</targetMode>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VREA_Transcendent</path>
+				<level>3</level>
+				<order>1</order>
+				<psyfocusCost>0.01</psyfocusCost>
+				<entropyGain>32</entropyGain>
+				<prerequisites>
+					<li>VREA_PsychicThrow</li>
+				</prerequisites>
+			</li>
+			<li Class="VFECore.Abilities.AbilityExtension_Projectile">
+				<projectile>VREA_PsychicWarp</projectile>
+				<soundOnImpact>VREA_PsychicWarp_Hit</soundOnImpact>
+				<hitFlags>All</hitFlags>
+			</li>
+		</modExtensions>
+	</VFECore.Abilities.AbilityDef>
+
+	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VREA_PsychicLance</defName>
+		<label>psychic lance</label>
+		<description>text.todo</description>
+		<iconPath>UI/Psycasts/PsychicLance</iconPath>
+		<abilityClass>VFECore.Abilities.Ability_ShootProjectile</abilityClass>
+		<requireLineOfSight>false</requireLineOfSight>
+		<castTime>60</castTime>
+		<range>42.9</range>
+		<radius>2.9</radius>
+		<radiusStatFactors>
+			<PsychicSensitivity>1</PsychicSensitivity>
+		</radiusStatFactors>
+		<targetMode>Location</targetMode>
+		<castSound>VREA_PsychicLance_Cast</castSound>
+		<needsTicking>true</needsTicking>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VREA_Transcendent</path>
+				<level>4</level>
+				<order>1</order>
+				<psyfocusCost>0.04</psyfocusCost>
+				<entropyGain>40</entropyGain>
+				<prerequisites>
+					<li>VREA_PsychicWarp</li>
+				</prerequisites>
+			</li>
+			<li Class="VFECore.Abilities.AbilityExtension_Projectile">
+				<projectile>VREA_PsychicLance</projectile>
+			</li>
+		</modExtensions>
+	</VFECore.Abilities.AbilityDef>
 
 </Defs>
