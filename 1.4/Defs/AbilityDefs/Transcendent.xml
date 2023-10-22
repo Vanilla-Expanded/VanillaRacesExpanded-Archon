@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>VPEA_Shortskip</defName>
+		<label>shortskip</label>
+		<description>text.todo.</description>
+		<iconPath>UI/Psycasts/Shortskip</iconPath>
+		<abilityClass>VREArchon.Ability_Shortskip</abilityClass>
+		<castTime>9</castTime>
+		<targetCount>2</targetCount>
+		<range>28</range>
+		<rangeStatFactors>
+			<PsychicSensitivity>1</PsychicSensitivity>
+		</rangeStatFactors>
+		<requireLineOfSight>false</requireLineOfSight>
+		<needsTicking>true</needsTicking>
+		<targetModes>
+			<li>Pawn</li>
+			<li>Location</li>
+		</targetModes>
+		<targetingParametersList>
+			<li>
+				<canTargetSelf>True</canTargetSelf>
+				<canTargetPawns>True</canTargetPawns>
+				<canTargetBuildings>False</canTargetBuildings>
+				<canTargetItems>true</canTargetItems>
+				<canTargetPlants>false</canTargetPlants>
+				<thingCategory>Item</thingCategory>
+				<mustBeSelectable>true</mustBeSelectable>
+				<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+			</li>
+			<li Class="VFECore.Abilities.TargetingParametersForAoE">
+				<canTargetLocations>true</canTargetLocations>
+				<canTargetBlockedLocations>false</canTargetBlockedLocations>
+			</li>
+		</targetingParametersList>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VREA_Transcendent</path>
+				<level>1</level>
+				<order>1</order>
+				<psyfocusCost>0.02</psyfocusCost>
+				<entropyGain>28</entropyGain>
+			</li>
+			<li Class="VanillaPsycastsExpanded.Skipmaster.AbilityExtension_Clamor">
+				<clamorType>Ability</clamorType>
+				<clamorRadius>10</clamorRadius>
+			</li>
+		</modExtensions>
+	</VFECore.Abilities.AbilityDef>
+
+</Defs>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <VanillaPsycastsExpanded.PsycasterPathDef>
+    <defName>VREA_Transcendent</defName>
+    <label>transcendent</label>
+    <description>Transcendent psycaster path gives access to a number of new offensive psycasts that are meant to inflict pain in one way or another. By manipulating the psychic energy and shaping it into various types of projectiles, transcendent psycasters are capable of raining death at the cost of psychic entropy build up.</description>
+    <background>UI/TranscendentPath</background>
+    <altBackground>UI/PathBG_Transcendent</altBackground>
+    <tab>Psycasts</tab>
+    <tooltip>Masters of psychic manipulation, puppeteers can delve into minds, inflicting deep psychic wounds or taking control. They craft mindless puppets, extensions of their own will, which collect knowledge and serve their whims. In times of danger, a puppeteer can transfer their very essence into a puppet, achieving a form of immortality. This arcane art is jealously guarded, known only to the elite empire-born nobles.</tooltip>
+	<requiredGene>VRE_Transcendent</requiredGene>
+	<lockedReason>Transcendent only</lockedReason>
+  </VanillaPsycastsExpanded.PsycasterPathDef>
+
+</Defs>

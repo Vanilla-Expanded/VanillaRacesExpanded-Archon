@@ -10,5 +10,6 @@ namespace VREArchon
         public static GeneDef VRE_Aggression_ExtremelyAggressive;
         public static InteractionDef Slight;
         public static JobDef VRE_ArmedSocialFight;
+        public static FleckDef VREA_PsycastSkipFlashGreen;
     }
 }
