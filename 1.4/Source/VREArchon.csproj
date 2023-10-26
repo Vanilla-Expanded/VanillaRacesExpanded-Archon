@@ -71,6 +71,12 @@
     <Publicize Include="Assembly-CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Events\IncidentWorker_ArchonRaid.cs" />
+    <Compile Include="AI\JobGiver_CaptureDownedVictimAndLeaveMap.cs" />
+    <Compile Include="AI\LordJob_ArchonRaid.cs" />
+    <Compile Include="AI\LordToil_ArchonRaid.cs" />
+    <Compile Include="AI\PawnsArrivalModeWorker_ArchonRaidArrival.cs" />
+    <Compile Include="AI\RaidStrategyWorker_ArchonRaid.cs" />
     <Compile Include="Stats\StatPart_PsychicStormWeather.cs" />
     <Compile Include="Events\WeatherEvent_LightningStrike_PsychicStorm.cs" />
     <Compile Include="GameComponents\GameComponent_TranscendentPawns.cs" />

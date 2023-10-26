@@ -34,7 +34,7 @@ namespace VREArchon
                             p.Map.flecks.CreateFleck(dataAttachedOverlay);
                         }
                         else
-                            FleckMaker.Static(t.TrueCenter(), t.Map, FleckDefOf.PsycastSkipFlashEntry);
+                            FleckMaker.Static(t.TrueCenter(), t.Map, VREA_DefOf.VREA_PsycastSkipFlashGreen);
 
                         GlobalTargetInfo dest = this.Comp.currentlyCastingTargets[i + 1];
                         FleckMaker.Static(dest.Cell, dest.Map, set[1]);

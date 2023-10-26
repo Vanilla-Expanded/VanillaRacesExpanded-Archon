@@ -1,5 +1,6 @@
 ﻿using RimWorld;
 using Verse;
+using Verse.AI;
 
 namespace VREArchon
 {
@@ -25,5 +26,10 @@ namespace VREArchon
         public static ThingDef VREA_MeleeWeapon_ArchobladeBladelink;
         public static ThingDef VREA_PawnJumper;
         public static WeatherDef VREA_PsychicStorm;
+        public static FactionDef VRE_Archons;
+        public static IncidentDef VREA_ArchonRaid;
+        public static PawnsArrivalModeDef VREA_ArchonRaidArrival;
+        public static RaidStrategyDef VREA_ArchonRaidStrategy;
+        public static DutyDef VREA_CaptureDownedVictimAndLeaveMap;
     }
 }
