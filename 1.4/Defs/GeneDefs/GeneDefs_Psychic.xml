@@ -3,7 +3,7 @@
 	<GeneDef>
 		<defName>VRE_ExtremeMeditation</defName>
 		<label>extreme meditation</label>
-		<description>todo.</description>
+		<description>Carriers of this gene are capable of having much more impactful meditation sessions. They will regenerate psyfocus significantly quicker.</description>
 		<statFactors>
 			<MeditationFocusGain>1.5</MeditationFocusGain>
 		</statFactors>
@@ -13,13 +13,13 @@
 		<iconPath>UI/Icons/Genes/Gene_MeditationExtreme</iconPath>
 		<displayCategory>Psychic</displayCategory>
 		<displayOrderInCategory>1000</displayOrderInCategory>
-		<biostatCpx>1</biostatCpx>
-		<biostatMet>0</biostatMet>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>-4</biostatMet>
 	</GeneDef>
 	<GeneDef>
 		<defName>VRE_SwiftMeditation</defName>
 		<label>swift meditation</label>
-		<description>todo.</description>
+		<description>Carriers of this gene are capable of having a faster meditation sessions. They will regenerate psyfocus slightly faster than usual.</description>
 		<statFactors>
 			<MeditationFocusGain>1.2</MeditationFocusGain>
 		</statFactors>
@@ -29,13 +29,13 @@
 		<iconPath>UI/Icons/Genes/Gene_MeditationSwift</iconPath>
 		<displayCategory>Psychic</displayCategory>
 		<displayOrderInCategory>1001</displayOrderInCategory>
-		<biostatCpx>1</biostatCpx>
-		<biostatMet>0</biostatMet>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>-2</biostatMet>
 	</GeneDef>
 	<GeneDef>
 		<defName>VRE_SlowMeditation</defName>
 		<label>slow meditation</label>
-		<description>todo.</description>
+		<description>Carriers of this gene are finding it difficult to focus during meditation sessions. They will regenerate psyfocus significantly slower than usual.</description>
 		<statFactors>
 			<MeditationFocusGain>0.5</MeditationFocusGain>
 		</statFactors>
@@ -46,12 +46,12 @@
 		<displayCategory>Psychic</displayCategory>
 		<displayOrderInCategory>1002</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>0</biostatMet>
+		<biostatMet>1</biostatMet>
 	</GeneDef>
 	<GeneDef>
 		<defName>VRE_WeakEntropyCapacity</defName>
 		<label>weak entropy capacity</label>
-		<description>todo.</description>
+		<description>Carriers of this gene have a much lower capacity to withstand the chaotic psychic energy accumulated via psychic powers they use.</description>
 		<statFactors>
 			<PsychicEntropyMax>0.5</PsychicEntropyMax>
 		</statFactors>
@@ -62,12 +62,12 @@
 		<displayCategory>Psychic</displayCategory>
 		<displayOrderInCategory>1003</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>0</biostatMet>
+		<biostatMet>1</biostatMet>
 	</GeneDef>
 	<GeneDef>
 		<defName>VRE_HighEntropyCapacity</defName>
 		<label>high entropy capacity</label>
-		<description>todo.</description>
+		<description>Carriers of this gene have a higher capacity to withstand the chaotic psychic energy accumulated via psychic powers they use.</description>
 		<statFactors>
 			<PsychicEntropyMax>1.25</PsychicEntropyMax>
 		</statFactors>
@@ -77,13 +77,13 @@
 		<iconPath>UI/Icons/Genes/Gene_EntropyCapacityHigh</iconPath>
 		<displayCategory>Psychic</displayCategory>
 		<displayOrderInCategory>1004</displayOrderInCategory>
-		<biostatCpx>1</biostatCpx>
-		<biostatMet>0</biostatMet>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>-2</biostatMet>
 	</GeneDef>
 	<GeneDef>
 		<defName>VRE_ExtremeEntropyCapacity</defName>
 		<label>extreme entropy capacity</label>
-		<description>todo.</description>
+		<description>Carriers of this gene have a much higher capacity to withstand the chaotic psychic energy accumulated via psychic powers they use.</description>
 		<statFactors>
 			<PsychicEntropyMax>1.5</PsychicEntropyMax>
 		</statFactors>
@@ -93,7 +93,7 @@
 		<iconPath>UI/Icons/Genes/Gene_EntropyCapacityExtreme</iconPath>
 		<displayCategory>Psychic</displayCategory>
 		<displayOrderInCategory>1005</displayOrderInCategory>
-		<biostatCpx>1</biostatCpx>
-		<biostatMet>0</biostatMet>
+		<biostatCpx>3</biostatCpx>
+		<biostatMet>-4</biostatMet>
 	</GeneDef>
 </Defs>

@@ -102,6 +102,8 @@ namespace VREArchon
                         GenSpawn.Spawn(pawn, cell, map);
                         ChoiceLetter let = LetterMaker.MakeLetter("VREA_ReturnsLabel".Translate(pawn.Name), "VREA_Returns".Translate(pawn.Name), LetterDefOf.PositiveEvent,pawn);
                         Find.LetterStack.ReceiveLetter(let);
+                        ThingWithComps blade = (ThingWithComps)ThingMaker.MakeThing(VREA_DefOf.VREA_MeleeWeapon_ArchobladeBladelink);
+                        pawn.equipment.AddEquipment(blade);
                     }
 
                 }

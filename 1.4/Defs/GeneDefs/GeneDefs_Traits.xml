@@ -3,7 +3,7 @@
 	<GeneDef>
 		<defName>VRE_Maniac</defName>
 		<label>maniac</label>
-		<description>todo.</description>
+		<description>Carriers of this gene lack any sort of empathy. They do not care about the suffering of others and take no pleasure from socialising with others.</description>
 		<forcedTraits>
 			<li>
 				<def>Psychopath</def>
@@ -14,7 +14,7 @@
 		<displayCategory>Mood</displayCategory>
 		<displayOrderInCategory>1000</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>3</biostatMet>
+		<biostatMet>4</biostatMet>
 	</GeneDef>
 	
 </Defs>

@@ -7,11 +7,11 @@
 			<li>AG_Gestation</li>
 			<li>AG_Fertility</li>
 		</exclusionTags>
-		<description>todo.</description>
+		<description>Carriers of this gene take twice as long to develop a child during pregnancy. Pregnancy lasts three hexamesters - 36 days.</description>
 		<iconPath>UI/Icons/Genes/Gene_PregnancyLong</iconPath>
 		<displayCategory>Reproduction</displayCategory>
 		<displayOrderInCategory>115.2</displayOrderInCategory>
-		<biostatMet>-1</biostatMet>
+		<biostatMet>1</biostatMet>
 		<biostatCpx>1</biostatCpx>
 		
 		<modExtensions>
@@ -27,7 +27,7 @@
 			<li>AG_Gestation</li>
 			<li>AG_Fertility</li>
 		</exclusionTags>
-		<description>todo.</description>
+		<description>Carriers of this gene develop a child during pregnancy much faster. Pregnancy lasts 3 bimesters - 12 days.</description>
 		<iconPath>UI/Icons/Genes/Gene_PregnancyShort</iconPath>
 		<displayCategory>Reproduction</displayCategory>
 		<displayOrderInCategory>115.3</displayOrderInCategory>

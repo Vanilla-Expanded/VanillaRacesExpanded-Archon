@@ -4,8 +4,9 @@
 	<GeneDef>
 		<defName>VRE_Leatherskin</defName>
 		<label>leatherskin</label>
-		<description>todo</description>
+		<description>Carriers of this gene are covered in a thick, rigged leather, which provides a higher sharp and blunt defense.</description>
 		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
 		<displayCategory>Miscellaneous</displayCategory>
 		<displayOrderInCategory>1000</displayOrderInCategory>
 		<iconPath>UI/Icons/Genes/Gene_Leatherskin</iconPath>
