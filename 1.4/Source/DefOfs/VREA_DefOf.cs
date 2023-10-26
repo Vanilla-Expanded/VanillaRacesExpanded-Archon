@@ -24,7 +24,6 @@ namespace VREArchon
         public static ThingDef VREA_Warp_Mote;
         public static ThingDef VREA_MeleeWeapon_ArchobladeBladelink;
         public static ThingDef VREA_PawnJumper;
-
-
+        public static WeatherDef VREA_PsychicStorm;
     }
 }

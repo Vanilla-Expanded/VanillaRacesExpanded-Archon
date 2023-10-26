@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <IncidentDef>
+    <defName>VREA_PsychicStorm</defName>
+    <label>psychic storm</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>VREArchon.IncidentWorker_PsychicStorm</workerClass>
+    <letterLabel>Psychic storm</letterLabel>
+    <letterDef>ThreatBig</letterDef>
+    <baseChance>1</baseChance>
+    <minRefireDays>45</minRefireDays>
+    <disabledWhen>
+      <extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
+    </disabledWhen>
+  </IncidentDef>
+  
+
+</Defs>
