@@ -1,5 +1,7 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 using Verse;
 using Verse.AI;
 
@@ -19,7 +21,19 @@ namespace VREArchon
         public override void Arrive(List<Pawn> pawns, IncidentParms parms)
         {
             Map map = (Map)parms.target;
-            for (int i = 0; i < pawns.Count; i++)
+            var pawnsToTeleport = pawns.InRandomOrder().Take(new IntRange(2, 4).RandomInRange).ToList();
+            var pawnsToArrive = pawns.Where(x => pawnsToTeleport.Contains(x) is false).ToList();
+            for (int i = 0; i < pawnsToTeleport.Count; i++)
+            {
+                IntVec3 loc = map.AllCells.Where(x => x.Walkable(map) && map.reachability.CanReachColony(x)).RandomElement();
+                GenSpawn.Spawn(pawns[i], loc, map, parms.spawnRotation);
+                FleckCreationData dataAttachedOverlay = FleckMaker.GetDataAttachedOverlay(pawns[i], 
+                    VREA_DefOf.VREA_PsycastSkipFlashGreen, Vector3.zero);
+                dataAttachedOverlay.link.detachAfterTicks = 5;
+                map.flecks.CreateFleck(dataAttachedOverlay);
+            }
+
+            for (int i = 0; i < pawnsToArrive.Count; i++)
             {
                 IntVec3 loc = CellFinder.RandomClosewalkCellNear(parms.spawnCenter, map, 8);
                 GenSpawn.Spawn(pawns[i], loc, map, parms.spawnRotation);

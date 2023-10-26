@@ -9,11 +9,11 @@ namespace VREArchon
         {
             var map = (parms.target as Map);
             map.weatherManager.TransitionTo(VREA_DefOf.VREA_PsychicStorm);
-            if (Rand.Chance(0.5f) || true)
+            if (Rand.Chance(0.5f))
             {
                 IncidentParms raidParms = StorytellerUtility.DefaultParmsNow(VREA_DefOf.VREA_ArchonRaid.category, map);
-                Find.Storyteller.incidentQueue.Add(VREA_DefOf.VREA_ArchonRaid, Find.TickManager.TicksGame + 3000, raidParms);
-                    //+ (GenDate.TicksPerHour * new IntRange(8, 14).RandomInRange), raidParms);
+                Find.Storyteller.incidentQueue.Add(VREA_DefOf.VREA_ArchonRaid, Find.TickManager.TicksGame
+                    + (GenDate.TicksPerHour * new IntRange(4, 8).RandomInRange), raidParms);
             }
             return true;
         }
