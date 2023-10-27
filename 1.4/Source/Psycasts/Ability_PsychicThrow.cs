@@ -31,6 +31,7 @@ namespace VREArchon
                         countToFire += amount;
                         ticksToFire = Find.TickManager.TicksGame + 8;
                         curTargets.Add(target);
+                        mainTarget = target;
                     }
                 }
             }
@@ -49,7 +50,7 @@ namespace VREArchon
                     .Where(x => curTargets.Any(y => y.Thing == x) is false 
                     && x.Thing.Position.DistanceTo(pawn.Position) <= this.GetRangeForPawn())
                     .OrderBy(x => x.Thing.Position.DistanceTo(pawn.Position)).FirstOrDefault();
-                if (nearbyOtherEnemy != null)
+                if (nearbyOtherEnemy?.Thing != null)
                 {
                     curTargets.Add(nearbyOtherEnemy.Thing);
                     this.ShootProjectile(nearbyOtherEnemy.Thing);
@@ -68,7 +69,7 @@ namespace VREArchon
             base.ExposeData();
             Scribe_Values.Look(ref countToFire, "countToFire");
             Scribe_Values.Look(ref ticksToFire, "ticksToFire");
-            Scribe_TargetInfo.Look(ref mainTarget, "curTarget");
+            Scribe_TargetInfo.Look(ref mainTarget, "mainTarget");
             Scribe_Collections.Look(ref curTargets, "curTargets", LookMode.GlobalTargetInfo);
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
