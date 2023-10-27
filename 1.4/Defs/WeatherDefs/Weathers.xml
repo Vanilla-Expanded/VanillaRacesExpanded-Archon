@@ -19,7 +19,7 @@
 				<eventClass>WeatherEvent_LightningFlash</eventClass>
 			</li>
 			<li>
-				<averageInterval>1200</averageInterval>
+				<averageInterval>240</averageInterval>
 				<eventClass>VREArchon.WeatherEvent_LightningStrike_PsychicStorm</eventClass>
 			</li>
 		</eventMakers>
