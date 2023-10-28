@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="ApparelBase"> <!-- ApparelNoQualityBase? -->
+  <ThingDef ParentName="ApparelNoQualityBase"> <!-- ApparelNoQualityBase? -->
     <defName>VREA_Apparel_Archoplate</defName>
     <label>archoplate</label>
     <description>A suit of mystical armor created out of unidentified materials. It hums with psychic energy, and while it does not provide full body coverage, the wearer benefits from a nigh impenetrable psychic barrier capable of stopping most of the ranged attacks. The material is incredibly light, and does not hinder movement in any way.\n\nExpensive and beautiful, archoplate is often seen on enigmatic dimension-travellers called archons. Eltex weave within the armor greatly enhances the wearer's psychic sensitivity.</description>
     <techLevel>Archotech</techLevel>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
+      <texPath>Things/Item/Equipment/Armor/Archoplate/Archoplate</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <generateCommonality>2</generateCommonality>
@@ -44,7 +44,7 @@
         <li>Neck</li>
         <li>Shoulders</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
+      <wornGraphicPath>Things/Item/Equipment/Armor/Archoplate/Archoplate</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>
@@ -57,9 +57,21 @@
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
     </apparel>
     <comps Inherit="False">
-      <li>
-        <compClass>CompQuality</compClass>
+    <comps>
+      <li Class="CompProperties_ProjectileInterceptor">
+        <radius>3</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.9, 0.9, 0.1)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <hitPoints>380</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+        <chargeDurationTicks>5400</chargeDurationTicks><!-- 90s -->
+        <drawWithNoSelection>True</drawWithNoSelection>
+        <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
       </li>
+    </comps>
 	  <li Class="CompProperties_Forbiddable"/>
     </comps>
     <thingSetMakerTags>

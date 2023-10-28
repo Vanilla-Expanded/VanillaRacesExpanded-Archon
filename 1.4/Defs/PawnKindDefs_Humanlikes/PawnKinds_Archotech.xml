@@ -5,17 +5,12 @@
     <defName>ArchonWarrior</defName>
     <label>archon warrior</label>
     <race>Human</race>
-    <combatPower>250</combatPower>
+    <combatPower>450</combatPower>
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
     <chemicalAddictionChance>0.0</chemicalAddictionChance>
     <apparelMoney>10000~10000</apparelMoney>
     <apparelTags>
-      <li>IndustrialBasic</li>
-      <li>IndustrialAdvanced</li>
-      <li>IndustrialMilitaryBasic</li>
-      <li>IndustrialMilitaryAdvanced</li>
-      <li>SpacerMilitary</li>
-      <li>BeltDefensePop</li>
+      <li>Archon</li>
     </apparelTags>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>

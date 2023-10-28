@@ -4,7 +4,7 @@
 	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 		<defName>VPEA_Shortskip</defName>
 		<label>shortskip</label>
-		<description>text.todo.</description>
+		<description>Teleport the target to a desired position not too far from his starting point. Caster does not need line of sight to destination. Range increases with psychic sensitivity of the caster.</description>
 		<iconPath>UI/Psycasts/Shortskip</iconPath>
 		<abilityClass>VREArchon.Ability_Shortskip</abilityClass>
 		<castTime>9</castTime>
@@ -53,7 +53,7 @@
 	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 		<defName>VREA_PsychicThrow</defName>
 		<label>psychic throw</label>
-		<description>text.todo</description>
+		<description>Throw a focused payload of psychic energy, dealing blunt trauma to anything hit by it. Psychic sensitivity increases the amount of projectiles fired in a single burst, hitting several enemies.</description>
 		<iconPath>UI/Psycasts/PsychicThrow</iconPath>
 		<abilityClass>VREArchon.Ability_PsychicThrow</abilityClass>
 		<needsTicking>True</needsTicking>
@@ -88,7 +88,7 @@
 	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 		<defName>VREA_PsychicWarp</defName>
 		<label>psychic warp</label>
-		<description>text.todo</description>
+		<description>Hurl a microscoping multi-dimensional skipgate at a target, nullifying any armor they might have. Warped entities hit by psychic throw will detonate. Psychic sensitivity increases the amount of projectiles fired in a single burst, hitting several enemies.</description>
 		<iconPath>UI/Psycasts/PsychicWarp</iconPath>
 		<abilityClass>VREArchon.Ability_PsychicThrow</abilityClass>
 		<needsTicking>True</needsTicking>
@@ -123,7 +123,7 @@
 	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 		<defName>VREA_PsychicLance</defName>
 		<label>psychic lance</label>
-		<description>text.todo</description>
+		<description>Toss a large siege lance of psychic energy which generates a chaos skip sphere wherever it hits, skipping everyone under the effect to random nearby locations, inflicting deep cut wounds. Radius of the skip effect increases with Psychic sensitivity of the caster.</description>
 		<iconPath>UI/Psycasts/PsychicLance</iconPath>
 		<abilityClass>VFECore.Abilities.Ability_ShootProjectile</abilityClass>
 		<requireLineOfSight>false</requireLineOfSight>
