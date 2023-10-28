@@ -57,7 +57,6 @@
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
     </apparel>
     <comps Inherit="False">
-    <comps>
       <li Class="CompProperties_ProjectileInterceptor">
         <radius>3</radius>
         <interceptGroundProjectiles>true</interceptGroundProjectiles>
@@ -71,7 +70,6 @@
         <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
         <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
       </li>
-    </comps>
 	  <li Class="CompProperties_Forbiddable"/>
     </comps>
     <thingSetMakerTags>
