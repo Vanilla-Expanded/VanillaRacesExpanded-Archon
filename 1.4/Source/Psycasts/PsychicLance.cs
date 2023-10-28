@@ -104,7 +104,7 @@ namespace VREArchon
         protected override void Impact(Thing hitThing, bool blockedByShield = false)
         {
             var map = this.Map;
-            FleckMaker.Static(this.Position, map, VREA_DefOf.VREA_PsycastSkipFlashGreen);
+            FleckMaker.Static(this.Position, map, VREA_DefOf.VREA_PsycastSkipFlashGreen, this.ability.GetRadiusForPawn());
             base.Impact(null, blockedByShield);
             var cells = GenRadial.RadialCellsAround(Position, this.ability.GetRadiusForPawn(), true)
                 .Where(x => x.InBounds(map) && x.Walkable(map)).ToList();

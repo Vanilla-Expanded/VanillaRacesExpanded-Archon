@@ -37,8 +37,8 @@ namespace VREArchon
                             FleckMaker.Static(t.TrueCenter(), t.Map, VREA_DefOf.VREA_PsycastSkipFlashGreen);
 
                         GlobalTargetInfo dest = this.Comp.currentlyCastingTargets[i + 1];
-                        FleckMaker.Static(dest.Cell, dest.Map, set[1]);
-                        FleckMaker.Static(dest.Cell, dest.Map, set[2]);
+                        //FleckMaker.Static(dest.Cell, dest.Map, set[1]);
+                        FleckMaker.Static(dest.Cell, dest.Map, set[0]);
                         SoundDefOf.Psycast_Skip_Entry.PlayOneShot(t);
                         SoundDefOf.Psycast_Skip_Exit.PlayOneShot(new TargetInfo(dest.Cell, dest.Map));
                         this.AddEffecterToMaintain(EffecterDefOf.Skip_Entry.Spawn(t, t.Map), t.Position, 60);
