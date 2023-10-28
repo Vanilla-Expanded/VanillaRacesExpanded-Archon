@@ -11,6 +11,7 @@ namespace VREArchon
         public static HediffDef VREA_PsychicallyWarped;
 
         public static GeneDef VRE_Aggression_ExtremelyAggressive;
+        public static GeneDef VRE_EarlyMaturity;
 
         public static InteractionDef Slight;
 

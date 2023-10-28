@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>VRE_EarlyMaturity</defName>
+		<label>early maturity</label>
+		
+		<description>Carriers of this gene reach skill maturity significantly earlier than others. They can do majority of tasks at the age of 4, and can do wardening, doctoring and construction at the age of 7.</description>
+		<iconPath>UI/Icons/Genes/Gene_EarlyMaturity</iconPath>
+		<displayCategory>Reproduction</displayCategory>
+		<displayOrderInCategory>500</displayOrderInCategory>
+		<biostatMet>-1</biostatMet>
+		<biostatCpx>1</biostatCpx>
+		
+		
+	</GeneDef>
+	
+	
+</Defs>
