@@ -11,18 +11,6 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <generateCommonality>2</generateCommonality>
-    <statBases>
-	  <MarketValue>6250</MarketValue>
-      <MaxHitPoints>460</MaxHitPoints>
-      <Mass>10</Mass>
-      <Flammability>0.4</Flammability>
-      <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.86</ArmorRating_Heat>
-      <Insulation_Cold>38</Insulation_Cold>
-      <Insulation_Heat>22</Insulation_Heat>
-      <EquipDelay>4</EquipDelay>
-    </statBases>
     <equippedStatOffsets>
       <PsychicSensitivity>0.5</PsychicSensitivity>
 	  <PsychicEntropyMax>10</PsychicEntropyMax>
@@ -56,19 +44,33 @@
       </defaultOutfitTags>
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
     </apparel>
+    <statBases>
+	  <MarketValue>6250</MarketValue>
+      <MaxHitPoints>460</MaxHitPoints>
+      <Mass>10</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.86</ArmorRating_Heat>
+      <Insulation_Cold>38</Insulation_Cold>
+      <Insulation_Heat>22</Insulation_Heat>
+      <EquipDelay>4</EquipDelay>
+	  <VEF_EnergyShieldRadiusApparel>3</VEF_EnergyShieldRadiusApparel>
+	  <VEF_EnergyShieldEnergyMaxApparel>5.6</VEF_EnergyShieldEnergyMaxApparel>
+	  <VEF_EnergyShieldRechargeRateApparel>10</VEF_EnergyShieldRechargeRateApparel>
+    </statBases>
+	<tickerType>Normal</tickerType>
     <comps Inherit="False">
-      <li Class="CompProperties_ProjectileInterceptor">
-        <radius>3</radius>
-        <interceptGroundProjectiles>true</interceptGroundProjectiles>
-        <color>(0.9, 0.9, 0.1)</color>
-        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
-        <activeSound>BulletShield_Ambience</activeSound>
-        <hitPoints>380</hitPoints>
-        <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
-        <chargeDurationTicks>5400</chargeDurationTicks><!-- 90s -->
-        <drawWithNoSelection>True</drawWithNoSelection>
+      <li Class="VFECore.CompProperties_ShieldField">
+		<activeAlways>True</activeAlways>
+		<initialEnergyPercentage>1</initialEnergyPercentage>
+        <shieldColour>(0.9, 0.9, 0.1)</shieldColour>
+		<shieldRadiusStat>VEF_EnergyShieldRadiusApparel</shieldRadiusStat>
         <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
-        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+		<rechargeRateStat>VEF_EnergyShieldRechargeRateApparel</rechargeRateStat>
+        <activeSound>BulletShield_Ambience</activeSound>
+		<shieldEnergyMaxStat>VEF_EnergyShieldEnergyMaxApparel</shieldEnergyMaxStat>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
       </li>
 	  <li Class="CompProperties_Forbiddable"/>
     </comps>
