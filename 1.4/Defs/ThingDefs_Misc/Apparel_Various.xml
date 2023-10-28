@@ -25,7 +25,7 @@
     </statBases>
     <equippedStatOffsets>
       <PsychicSensitivity>0.5</PsychicSensitivity>
-	  <PsychicEntropyMax>8</PsychicEntropyMax>
+	  <PsychicEntropyMax>10</PsychicEntropyMax>
 	  <PsychicEntropyRecoveryRate>0.105</PsychicEntropyRecoveryRate>
       <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
     </equippedStatOffsets>
