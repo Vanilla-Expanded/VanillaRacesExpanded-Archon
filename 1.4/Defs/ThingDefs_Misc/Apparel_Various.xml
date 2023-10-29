@@ -55,9 +55,9 @@
       <Insulation_Cold>38</Insulation_Cold>
       <Insulation_Heat>22</Insulation_Heat>
       <EquipDelay>4</EquipDelay>
-	  <VEF_EnergyShieldRadiusApparel>3</VEF_EnergyShieldRadiusApparel>
+	  <VEF_EnergyShieldRadiusApparel>2</VEF_EnergyShieldRadiusApparel>
 	  <VEF_EnergyShieldEnergyMaxApparel>5.6</VEF_EnergyShieldEnergyMaxApparel>
-	  <VEF_EnergyShieldRechargeRateApparel>10</VEF_EnergyShieldRechargeRateApparel>
+	  <VEF_EnergyShieldRechargeRateApparel>0.12</VEF_EnergyShieldRechargeRateApparel>
     </statBases>
 	<tickerType>Normal</tickerType>
     <comps Inherit="False">
