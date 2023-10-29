@@ -44,6 +44,13 @@
         <VRE_Archon>999</VRE_Archon>
       </xenotypeChances>
     </xenotypeSet>
+    <specificApparelRequirements Inherit="False">
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Shell</apparelLayer>
+        <biocode>True</biocode>
+      </li>
+    </specificApparelRequirements>
 	<defaultFactionType>VRE_Archons</defaultFactionType>
   </PawnKindDef>
 

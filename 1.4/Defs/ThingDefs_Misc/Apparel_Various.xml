@@ -73,6 +73,7 @@
         <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
       </li>
 	  <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_Biocodable"/>
     </comps>
     <thingSetMakerTags>
       <li>VREA_None</li>
