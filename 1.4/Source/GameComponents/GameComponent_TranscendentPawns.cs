@@ -4,7 +4,7 @@ using Verse;
 using UnityEngine;
 using System.Collections.Generic;
 using Verse.Noise;
-using static Mono.Security.X509.X520;
+using Verse.Sound;
 
 
 namespace VREArchon
@@ -17,6 +17,9 @@ namespace VREArchon
         protected bool contentsKnown;
         public int tickCounter = 0;
         public int tickInterval = thirtyDaysInTicks;
+        public int deadPawnsTickCounter = 0;
+        public int deadPawnsTickInterval = 100;
+        public List<Pawn> listOfPawnsThatDied = new List<Pawn>();
 
         public const int thirtyDaysInTicks = 1800000;
         public const int sixtyDaysInTicks = 3600000;
@@ -29,7 +32,9 @@ namespace VREArchon
             Scribe_Deep.Look<ThingOwner>(ref this.innerContainer, "innerContainer", new object[] { this });
             Scribe_Values.Look<int>(ref tickInterval, "tickInterval");
             Scribe_Values.Look<int>(ref tickCounter, "tickCounter");
+            Scribe_Values.Look<int>(ref deadPawnsTickCounter, "deadPawnsTickCounter");
 
+            Scribe_Collections.Look(ref listOfPawnsThatDied, "listOfPawnsThatDied", LookMode.Reference);
         }
         public GameComponent_TranscendentPawns()
         {
@@ -109,6 +114,61 @@ namespace VREArchon
                 }
                 tickInterval = new IntRange(thirtyDaysInTicks, sixtyDaysInTicks).RandomInRange;
                 tickCounter = 0;
+            }
+
+            deadPawnsTickCounter++;
+
+            if ((deadPawnsTickCounter > deadPawnsTickInterval))
+            {
+                if (listOfPawnsThatDied.Count > 0)
+                {
+                    List<Pawn> tempList = new List<Pawn>();
+
+                    foreach (Pawn pawn in listOfPawnsThatDied)
+                    {
+                        tempList.Add(pawn);
+                    }
+
+                    foreach (Pawn pawn in tempList)
+                    {
+                        if (pawn.Corpse.Map != null)
+                        {
+                           
+                            ResurrectionUtility.Resurrect(pawn);
+
+                            Thing swordToDestroy = null;
+
+                            foreach (IntVec3 tile in pawn.CellsAdjacent8WayAndInside())
+                            {
+                                List<Thing> listOfThings = tile.GetThingList(pawn.Map);
+                                foreach (Thing thing in listOfThings)
+                                {
+                                    if (thing.def == VREA_DefOf.VREA_MeleeWeapon_ArchobladeBladelink)
+                                    {
+                                        swordToDestroy = thing;
+                                    }
+                                }
+
+                            }
+                            if (swordToDestroy != null)
+                            {
+                                swordToDestroy.Destroy();
+                            }
+                            FleckMaker.Static(pawn.TrueCenter(), pawn.Map, VREA_DefOf.VREA_PsycastSkipFlashGreen);
+                            SoundDefOf.Psycast_Skip_Entry.PlayOneShot(pawn);
+                            TryAcceptThing(pawn);
+
+                            listOfPawnsThatDied.Remove(pawn);
+                        }
+                        
+
+
+                    }
+                    
+
+                }
+
+                deadPawnsTickCounter = 0;
             }
 
         }
