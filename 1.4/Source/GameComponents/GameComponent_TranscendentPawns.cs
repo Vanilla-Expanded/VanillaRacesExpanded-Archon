@@ -109,6 +109,8 @@ namespace VREArchon
                         Find.LetterStack.ReceiveLetter(let);
                         ThingWithComps blade = (ThingWithComps)ThingMaker.MakeThing(VREA_DefOf.VREA_MeleeWeapon_ArchobladeBladelink);
                         pawn.equipment.AddEquipment(blade);
+                        FleckMaker.Static(pawn.TrueCenter(), pawn.Map, VREA_DefOf.VREA_PsycastSkipFlashGreen);
+                        SoundDefOf.Psycast_Skip_Exit.PlayOneShot(pawn);
                     }
 
                 }
