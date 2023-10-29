@@ -15,6 +15,7 @@ namespace VREArchon
                 Find.Storyteller.incidentQueue.Add(VREA_DefOf.VREA_ArchonRaid, Find.TickManager.TicksGame
                     + (GenDate.TicksPerHour * new IntRange(4, 8).RandomInRange), raidParms);
             }
+            SendStandardLetter(def.letterLabel, def.letterText, def.letterDef, parms, LookTargets.Invalid);
             return true;
         }
     }
