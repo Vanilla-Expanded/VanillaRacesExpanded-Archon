@@ -46,5 +46,17 @@ namespace VREArchon
             }
             return base.CanFireNowSub(parms);
         }
+
+        public override bool TryExecuteWorker(IncidentParms parms)
+        {
+            if (parms.target is Map map)
+            {
+                if (map.weatherManager.CurWeatherPerceived != VREA_DefOf.VREA_PsychicStorm)
+                {
+                    return false;
+                }
+            }
+            return base.TryExecuteWorker(parms);
+        }
     }
 }
