@@ -79,6 +79,7 @@
     <Compile Include="AI\PawnsArrivalModeWorker_ArchonRaidArrival.cs" />
     <Compile Include="AI\RaidStrategyWorker_ArchonRaid.cs" />
     <Compile Include="HarmonyPatches\IncidentWorker_RaidEnemy_FactionCanBeGroupSource_Patch.cs" />
+    <Compile Include="HarmonyPatches\KidnappedPawnsTracker_Kidnap.cs" />
     <Compile Include="HarmonyPatches\LifeStageWorkSettingsPatches.cs" />
     <Compile Include="Stats\StatPart_PsychicStormWeather.cs" />
     <Compile Include="Events\WeatherEvent_LightningStrike_PsychicStorm.cs" />
