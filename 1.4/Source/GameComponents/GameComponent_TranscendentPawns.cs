@@ -158,12 +158,15 @@ namespace VREArchon
                             }
                             FleckMaker.Static(pawn.TrueCenter(), pawn.Map, VREA_DefOf.VREA_PsycastSkipFlashGreen);
                             SoundDefOf.Psycast_Skip_Entry.PlayOneShot(pawn);
-                            if (pawn.Faction.IsPlayer) {
-                                TryAcceptThing(pawn);
-                            }
+                            
                             
 
                             listOfPawnsThatDied.Remove(pawn);
+                            if (pawn.Faction.IsPlayer)
+                            {
+                                TryAcceptThing(pawn);
+                            }
+                            else pawn.Destroy();
                         }
                         
 
