@@ -7,7 +7,7 @@
 		<descriptionShort>A complete mystery whose earliest recorded appearance has been tied to the development of archotechnology and the first occurrences of Transcendence, the archons are an enigmatic race of quasi-humans capable of moving between dimensions. They have an optimized physiology for psycasting and are renowned for extreme levels of aggression even amongst themselves.</descriptionShort>
 		<iconPath>UI/Icons/Xenotypes/Archon</iconPath>
 		
-		<inheritable>false</inheritable>
+		<inheritable>true</inheritable>
 		<genes>
 			<li>VRE_Transcendent</li>
 			<li>VRE_InnatePsylink</li>
