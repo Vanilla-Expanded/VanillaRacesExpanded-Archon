@@ -128,11 +128,19 @@ namespace VREArchon
             {
                 soundLanding.PlayOneShot(new TargetInfo(Position, Map));
             }
-            FleckMaker.ThrowDustPuff(DestinationPos + Gen.RandomHorizontalVector(0.5f), Map, 2f);
+            
             foreach (IntVec3 tile in GenRadial.RadialCellsAround(Position, 1.9f, useCenter: true)) 
             {
+                FleckMaker.ThrowDustPuff(tile.ToVector3(), Map, 3f);
                 List<Thing> listOfThings = tile.GetThingList(this.Map);
-                foreach (Thing thing in listOfThings)
+                List<Thing> tmpList = new List<Thing>();
+                foreach(Thing thing in listOfThings)
+                {
+                    tmpList.Add(thing);
+                }
+
+
+                foreach (Thing thing in tmpList)
                 {
                     Pawn pawn = thing as Pawn;
                     if (pawn != null)
