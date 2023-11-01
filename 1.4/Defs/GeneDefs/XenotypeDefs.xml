@@ -29,6 +29,7 @@
 			<li>VRE_DreadHair</li>
 			<li>Skin_PaleYellow</li>
 		</genes>
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
 	</XenotypeDef>
 	
 </Defs>
