@@ -5,10 +5,10 @@
 		<label>leapjump</label>
 		<description>Jump to a distant location using super-strong archite-powered legs. Will cause damage to anyone in the landing zone.</description>
 		<iconPath>UI/Icons/Genes/Gene_LeapJumpLegs</iconPath>
-		<cooldownTicksRange>60</cooldownTicksRange>
+		<cooldownTicksRange>2500</cooldownTicksRange>
 		<hostile>true</hostile>
 		<verbProperties>
-			<verbClass>Verb_CastAbilityJump</verbClass>
+			<verbClass>VREArchon.Verb_CastAbilityBluntJump</verbClass>
 			<label>leapjump</label>
 			<violent>true</violent>
 			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
