@@ -5,7 +5,7 @@
 		<label>fast melee hitter</label>
 		<description>Carriers of this gene attack much quicker in close-quarters combat. Extra-fast muscle fibers make their strikes much faster.</description>
 		<statFactors>
-			<VEF_MeleeAttackSpeedFactor>0.8</VEF_MeleeAttackSpeedFactor>
+			<VEF_MeleeAttackSpeedFactor>1.25</VEF_MeleeAttackSpeedFactor>
 		</statFactors>
 		<exclusionTags>
 			<li>MeleeAttackSpeed</li>
@@ -21,7 +21,7 @@
 		<label>slow melee hitter</label>
 		<description>Carriers of this gene attack significantly slower in close-quarters combat. Weak muscle fibers make their strikes much slower.</description>
 		<statFactors>
-			<VEF_MeleeAttackSpeedFactor>1.25</VEF_MeleeAttackSpeedFactor>
+			<VEF_MeleeAttackSpeedFactor>0.8</VEF_MeleeAttackSpeedFactor>
 		</statFactors>
 		<exclusionTags>
 			<li>MeleeAttackSpeed</li>
@@ -37,7 +37,7 @@
 		<label>fast shooter</label>
 		<description>Carriers of this gene have enhanced reflexes, allowing them to fire their ranged weapons significantly faster.</description>
 		<statFactors>
-			<VEF_RangeAttackSpeedFactor>0.8</VEF_RangeAttackSpeedFactor>
+			<VEF_RangeAttackSpeedFactor>1.25</VEF_RangeAttackSpeedFactor>
 		</statFactors>
 		<exclusionTags>
 			<li>RangedAttackSpeed</li>
@@ -53,7 +53,7 @@
 		<label>slow shooter</label>
 		<description>Carriers of this gene have lowered reflexes and take significantly longer to aim their shots.</description>
 		<statFactors>
-			<VEF_RangeAttackSpeedFactor>1.25</VEF_RangeAttackSpeedFactor>
+			<VEF_RangeAttackSpeedFactor>0.8</VEF_RangeAttackSpeedFactor>
 		</statFactors>
 		<exclusionTags>
 			<li>RangedAttackSpeed</li>
