@@ -75,6 +75,9 @@
       </li>
 	  <li Class="CompProperties_Forbiddable"/>
 	  <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
     </comps>
     <thingSetMakerTags>
       <li>VREA_None</li>
