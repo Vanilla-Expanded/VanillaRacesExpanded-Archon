@@ -7,12 +7,7 @@ namespace VREArchon
     {
         public override bool FactionCanBeGroupSource(Faction f, Map map, bool desperate = false)
         {
-            return f?.def == VREA_DefOf.VRE_Archons;
-        }
-        public override bool TryResolveRaidFaction(IncidentParms parms)
-        {
-            parms.faction = Find.FactionManager.FirstFactionOfDef(VREA_DefOf.VRE_Archons);
-            return true;
+            return f?.def == VREA_DefOf.VRE_Archons && base.FactionCanBeGroupSource(f, map, desperate);
         }
 
         public override void ResolveRaidStrategy(IncidentParms parms, PawnGroupKindDef groupKind)
@@ -49,6 +44,10 @@ namespace VREArchon
 
         public override bool TryExecuteWorker(IncidentParms parms)
         {
+            if (parms.faction?.def != VREA_DefOf.VRE_Archons)
+            {
+                return false;
+            }
             if (parms.target is Map map)
             {
                 if (map.weatherManager.CurWeatherPerceived != VREA_DefOf.VREA_PsychicStorm)
