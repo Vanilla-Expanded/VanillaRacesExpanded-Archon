@@ -24,6 +24,10 @@ namespace VREArchon
         public const int thirtyDaysInTicks = 1800000;
         public const int sixtyDaysInTicks = 3600000;
 
+        // For testing purposes
+        //public const int thirtyDaysInTicks = 1800;
+        //public const int sixtyDaysInTicks = 3600;
+
         public IThingHolder ParentHolder => null;
 
         public override void ExposeData()
@@ -104,13 +108,16 @@ namespace VREArchon
                     {
                         Map map = Find.AnyPlayerHomeMap;
                         TryFindEntryCell(map, out IntVec3 cell);
-                        GenSpawn.Spawn(pawn, cell, map);
-                        ChoiceLetter let = LetterMaker.MakeLetter("VREA_ReturnsLabel".Translate(pawn.Name), "VREA_Returns".Translate(pawn.Name), LetterDefOf.PositiveEvent,pawn);
-                        Find.LetterStack.ReceiveLetter(let);
-                        ThingWithComps blade = (ThingWithComps)ThingMaker.MakeThing(VREA_DefOf.VREA_MeleeWeapon_ArchobladeBladelink);
-                        pawn.equipment.AddEquipment(blade);
-                        FleckMaker.Static(pawn.TrueCenter(), pawn.Map, VREA_DefOf.VREA_PsycastSkipFlashGreen);
-                        SoundDefOf.Psycast_Skip_Exit.PlayOneShot(pawn);
+                        if (cell != null) {
+                            GenSpawn.Spawn(pawn, cell, map);
+                            ChoiceLetter let = LetterMaker.MakeLetter("VREA_ReturnsLabel".Translate(pawn.Name), "VREA_Returns".Translate(pawn.Name), LetterDefOf.PositiveEvent, pawn);
+                            Find.LetterStack.ReceiveLetter(let);
+                            ThingWithComps blade = (ThingWithComps)ThingMaker.MakeThing(VREA_DefOf.VREA_MeleeWeapon_ArchobladeBladelink);
+                            pawn.equipment.AddEquipment(blade);
+                            FleckMaker.Static(pawn.TrueCenter(), pawn.Map, VREA_DefOf.VREA_PsycastSkipFlashGreen);
+                            SoundDefOf.Psycast_Skip_Exit.PlayOneShot(pawn);
+                        }
+                        
                     }
 
                 }
@@ -142,14 +149,18 @@ namespace VREArchon
 
                             foreach (IntVec3 tile in pawn.CellsAdjacent8WayAndInside())
                             {
-                                List<Thing> listOfThings = tile.GetThingList(pawn.Map);
-                                foreach (Thing thing in listOfThings)
+                                if (tile.InBounds(pawn.Map))
                                 {
-                                    if (thing.def == VREA_DefOf.VREA_MeleeWeapon_ArchobladeBladelink)
+                                    List<Thing> listOfThings = tile.GetThingList(pawn.Map);
+                                    foreach (Thing thing in listOfThings)
                                     {
-                                        swordToDestroy = thing;
+                                        if (thing.def == VREA_DefOf.VREA_MeleeWeapon_ArchobladeBladelink)
+                                        {
+                                            swordToDestroy = thing;
+                                        }
                                     }
                                 }
+                                
 
                             }
                             if (swordToDestroy != null)
@@ -162,7 +173,7 @@ namespace VREArchon
                             
 
                             listOfPawnsThatDied.Remove(pawn);
-                            if (pawn.Faction.IsPlayer)
+                            if (pawn.Faction?.IsPlayer == true && !pawn.Dead)
                             {
                                 TryAcceptThing(pawn);
                             }
