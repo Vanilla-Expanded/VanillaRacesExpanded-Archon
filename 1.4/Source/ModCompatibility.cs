@@ -6,7 +6,7 @@ namespace VREArchon
 {
     public static class ModCompatibility
     {
-        public static bool VPELoaded = ModsConfig.IsActive("VanillaExpanded.VPsycastsE");
+        public static bool VPELoaded = ModsConfig.IsActive("VanillaExpanded.VPsycastsE") || ModsConfig.IsActive("VanillaExpanded.VPsycastsE_steam");
 
         public static AbilityDef RandomPsycastDef()
         {
