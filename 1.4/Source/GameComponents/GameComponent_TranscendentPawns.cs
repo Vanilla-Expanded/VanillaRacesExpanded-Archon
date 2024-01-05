@@ -46,14 +46,14 @@ namespace VREArchon
             Instance = this;
         }
 
-        public GameComponent_TranscendentPawns(Game game): base()
+        public GameComponent_TranscendentPawns(Game game) : base()
         {
             this.innerContainer = new ThingOwner<Thing>(this, false, LookMode.Deep);
             Instance = this;
         }
 
         public ThingOwner GetDirectlyHeldThings()
-        {         
+        {
             return this.innerContainer;
         }
 
@@ -101,23 +101,28 @@ namespace VREArchon
 
             if ((tickCounter > tickInterval))
             {
-                if (innerContainer.Count > 0)
+                if (innerContainer?.Count > 0)
                 {
-                   Pawn pawn = innerContainer.RandomElement() as Pawn;
-                    if(pawn!=null)
+                    Pawn pawn = innerContainer.RandomElement() as Pawn;
+                    if (pawn != null)
                     {
                         Map map = Find.AnyPlayerHomeMap;
-                        TryFindEntryCell(map, out IntVec3 cell);
-                        if (cell != null) {
-                            GenSpawn.Spawn(pawn, cell, map);
-                            ChoiceLetter let = LetterMaker.MakeLetter("VREA_ReturnsLabel".Translate(pawn.Name), "VREA_Returns".Translate(pawn.Name), LetterDefOf.PositiveEvent, pawn);
-                            Find.LetterStack.ReceiveLetter(let);
-                            ThingWithComps blade = (ThingWithComps)ThingMaker.MakeThing(VREA_DefOf.VREA_MeleeWeapon_ArchobladeBladelink);
-                            pawn.equipment.AddEquipment(blade);
-                            FleckMaker.Static(pawn.TrueCenter(), pawn.Map, VREA_DefOf.VREA_PsycastSkipFlashGreen);
-                            SoundDefOf.Psycast_Skip_Exit.PlayOneShot(pawn);
+                        if (map != null)
+                        {
+                            TryFindEntryCell(map, out IntVec3 cell);
+                            if (cell != null)
+                            {
+                                GenSpawn.Spawn(pawn, cell, map);
+                                ChoiceLetter let = LetterMaker.MakeLetter("VREA_ReturnsLabel".Translate(pawn.Name), "VREA_Returns".Translate(pawn.Name), LetterDefOf.PositiveEvent, pawn);
+                                Find.LetterStack.ReceiveLetter(let);
+                                ThingWithComps blade = (ThingWithComps)ThingMaker.MakeThing(VREA_DefOf.VREA_MeleeWeapon_ArchobladeBladelink);
+                                pawn.equipment.AddEquipment(blade);
+                                FleckMaker.Static(pawn.TrueCenter(), pawn.Map, VREA_DefOf.VREA_PsycastSkipFlashGreen);
+                                SoundDefOf.Psycast_Skip_Exit.PlayOneShot(pawn);
+                            }
                         }
-                        
+
+
                     }
 
                 }
@@ -135,14 +140,18 @@ namespace VREArchon
 
                     foreach (Pawn pawn in listOfPawnsThatDied)
                     {
-                        tempList.Add(pawn);
+                        if (pawn != null)
+                        {
+                            tempList.Add(pawn);
+                        }
+
                     }
 
                     foreach (Pawn pawn in tempList)
                     {
-                        if (pawn.Corpse.Map != null)
+                        if (pawn?.Corpse?.Map != null)
                         {
-                           
+
                             ResurrectionUtility.Resurrect(pawn);
 
                             Thing swordToDestroy = null;
@@ -160,7 +169,7 @@ namespace VREArchon
                                         }
                                     }
                                 }
-                                
+
 
                             }
                             if (swordToDestroy != null)
@@ -169,21 +178,21 @@ namespace VREArchon
                             }
                             FleckMaker.Static(pawn.TrueCenter(), pawn.Map, VREA_DefOf.VREA_PsycastSkipFlashGreen);
                             SoundDefOf.Psycast_Skip_Entry.PlayOneShot(pawn);
-                            
-                            
+
+
 
                             listOfPawnsThatDied.Remove(pawn);
-                            if (pawn.Faction?.IsPlayer == true && !pawn.Dead)
+                            if (pawn.Faction!= null && pawn.Faction.IsPlayer == true && !pawn.Dead)
                             {
                                 TryAcceptThing(pawn);
                             }
                             else pawn.Destroy();
                         }
-                        
+
 
 
                     }
-                    
+
 
                 }
 
