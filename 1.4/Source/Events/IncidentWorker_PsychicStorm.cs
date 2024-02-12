@@ -8,6 +8,11 @@ namespace VREArchon
     {
         public override bool TryExecuteWorker(IncidentParms parms)
         {
+            var archonFaction = Find.FactionManager.FirstFactionOfDef(VREA_DefOf.VRE_Archons);
+            if (archonFaction is null)
+            {
+                return false;
+            }
             var map = (parms.target as Map);
             map.weatherManager.TransitionTo(VREA_DefOf.VREA_PsychicStorm);
             GameConditionManager gameConditionManager = parms.target.GameConditionManager;
@@ -19,11 +24,12 @@ namespace VREArchon
                 SendStandardLetter(def.letterLabel, gameCondition.LetterText, def.letterDef, parms, LookTargets.Invalid);
             }
 
-            if (Rand.Chance(0.5f))
+            if (Rand.Chance(VREArchonSettings.archonRaidSpawnChanceInPsychicStorm))
             {
                 IncidentParms raidParms = StorytellerUtility.DefaultParmsNow(VREA_DefOf.VREA_ArchonRaid.category, parms.target);
-                Find.Storyteller.incidentQueue.Add(VREA_DefOf.VREA_ArchonRaid, Find.TickManager.TicksGame
-                    + Mathf.Min(gameCondition.duration / 2, (GenDate.TicksPerHour * new IntRange(4, 8).RandomInRange)), raidParms);
+                raidParms.faction = archonFaction;
+                var ticksToFire = Find.TickManager.TicksGame + Mathf.Min(gameCondition.duration / 2, (GenDate.TicksPerHour * new IntRange(4, 8).RandomInRange));
+                Find.Storyteller.incidentQueue.Add(VREA_DefOf.VREA_ArchonRaid, ticksToFire, raidParms);
             }
             return true;
         }
