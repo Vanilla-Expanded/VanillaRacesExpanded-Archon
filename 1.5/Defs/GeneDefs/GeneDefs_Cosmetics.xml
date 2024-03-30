@@ -8,10 +8,24 @@
 		<selectionWeight>0</selectionWeight>
 		<description>Carriers of this gene have long, serrated ears.</description>
 		<iconPath>UI/Icons/Genes/Gene_EarSerrated</iconPath>
-		<graphicData>
-			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/SerratedEars/SerratedEars</graphicPath>
-			 <colorType>Skin</colorType>
-		</graphicData>
+		
+		 <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/SerratedEars/SerratedEars</texPath>
+        <colorType>Skin</colorType>
+        <parentTagDef>Head</parentTagDef>
+        <useSkinShader>true</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <defaultData>
+            <layer>70</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
 		
 	</GeneDef>
 	
@@ -25,18 +39,34 @@
 		<biostatCpx>1</biostatCpx>
 		
 		<iconPath>UI/Icons/Genes/Gene_FacialSpots</iconPath>
-		<graphicData>
-			<graphicPaths>
-				<li>Things/Pawn/Humanlike/HeadAttachments/FacialSpots/FacialSpotsA</li>
+		
+		 <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <colorType>Skin</colorType>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPaths>
+      <li>Things/Pawn/Humanlike/HeadAttachments/FacialSpots/FacialSpotsA</li>
 				<li>Things/Pawn/Humanlike/HeadAttachments/FacialSpots/FacialSpotsB</li>
 				<li>Things/Pawn/Humanlike/HeadAttachments/FacialSpots/FacialSpotsC</li>
-			</graphicPaths>
-			 <drawOffset>(0, -0.002, 0)</drawOffset>
-			<layer>PostSkin</layer>
-			<drawLoc>HeadMiddle</drawLoc>
-			<colorType>Skin</colorType>
-			<useSkinShader>true</useSkinShader>
-		</graphicData>
+        </texPaths>
+        <visibleFacing>
+          <li>East</li>
+          <li>South</li>
+          <li>West</li>
+        </visibleFacing>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
 		
 	</GeneDef>
 	

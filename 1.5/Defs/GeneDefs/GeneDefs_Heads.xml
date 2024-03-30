@@ -11,10 +11,20 @@
 		<displayOrderInCategory>1000</displayOrderInCategory>
 		<iconPath>UI/Icons/Genes/Gene_Leatherskin</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<graphicData>
-			<fur>VRE_Leatherskin</fur>
-			
-		</graphicData>
+		<fur>VRE_Leatherskin</fur>
+		<skinIsHairColor>false</skinIsHairColor>
+		<tattoosVisible>false</tattoosVisible>
+		<renderNodeProperties>
+			<li>
+				<debugLabel>Fur</debugLabel>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Skin</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>
 		<forcedHeadTypes>
 			<li>VRE_Leatherskin_Average_Normal</li>
 			<li>VRE_Leatherskin_Narrow_Normal</li>
