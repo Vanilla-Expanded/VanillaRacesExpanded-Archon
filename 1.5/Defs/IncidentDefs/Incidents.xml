@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<IncidentDef>
+		<defName>VREA_PsychicStorm</defName>
+		<label>psychic storm</label>
+		<category>ThreatBig</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>VREArchon.IncidentWorker_PsychicStorm</workerClass>
+		<letterLabel>Psychic storm</letterLabel>
+		<gameCondition>VREA_PsychicStorm</gameCondition>
+		<letterDef>ThreatBig</letterDef>
+		<baseChance>1</baseChance>
+		<minRefireDays>45</minRefireDays>
+		<durationDays>0.25~1</durationDays>
+		<disabledWhen>
+			<extremeWeatherIncidentsDisabled>true</extremeWeatherIncidentsDisabled>
+		</disabledWhen>
+	</IncidentDef>
+
+	<GameConditionDef>
+		<defName>VREA_PsychicStorm</defName>
+		<conditionClass>VREArchon.GameCondition_PsychicStorm</conditionClass>
+		<label>psychic storm</label>
+		<description>A supernatural psychic phenomena is happening over this entire region. Psychic energy will strike in random locations, damaging whatever is hit. Psychic sensitivity of everyone affected is doubled.</description>
+		<descriptionFuture>a storm of psychic energy will cover the area around [map_definite] for [gameConditionDuration_duration], potentially damaging infrastructure and doubling psychic sensitivity of every living being.</descriptionFuture>
+		<endMessage>The psychic storm is ending.</endMessage>
+		<letterText>A supernatural psychic phenomena causes a great disturbance in the area.\n\nPsychic energy will strike at random, and every living being will have their psychic sensitivity doubled.\n\nIt will last for anywhere between a few days to over a quadrum.</letterText>
+		<letterDef>ThreatBig</letterDef>
+		<weatherDef>VREA_PsychicStorm</weatherDef>
+		<natural>false</natural>
+	</GameConditionDef>
+  
+	<IncidentDef>
+		<defName>VREA_ArchonRaid</defName>
+		<label>archon raid</label>
+		<letterLabel>archon raid</letterLabel>
+		<letterText>Text.todo</letterText>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>VREArchon.IncidentWorker_ArchonRaid</workerClass>
+		<baseChance>0</baseChance>
+		<minRefireDays>30</minRefireDays>
+		<category>ThreatBig</category>
+		<pointsScaleable>true</pointsScaleable>
+		<tale>Raid</tale>
+	</IncidentDef>
+
+	<RaidStrategyDef>
+		<defName>VREA_ArchonRaidStrategy</defName>
+		<workerClass>VREArchon.RaidStrategyWorker_ArchonRaid</workerClass>
+		<selectionWeightPerPointsCurve>
+			<points>
+				<li>(0, 1)</li>
+			</points>
+		</selectionWeightPerPointsCurve>
+		<selectionWeightCurvesPerFaction>
+			<li>
+				<faction>Mechanoid</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(0, 0)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+		</selectionWeightCurvesPerFaction>
+		<pointsFactorCurve>
+			<points>
+				<li>0, 1</li>
+			</points>
+		</pointsFactorCurve>
+		<arriveModes>
+			<li>VREA_ArchonRaidArrival</li>
+		</arriveModes>
+		<letterLabelEnemy>Archon raid</letterLabelEnemy>
+		<arrivalTextEnemy>They are attacking immediately.</arrivalTextEnemy>
+		<letterLabelFriendly>Friendlies</letterLabelFriendly>
+		<arrivalTextFriendly>They are moving in to help you immediately.</arrivalTextFriendly>
+	</RaidStrategyDef>
+
+	<PawnsArrivalModeDef>
+		<defName>VREA_ArchonRaidArrival</defName>
+		<workerClass>VREArchon.PawnsArrivalModeWorker_ArchonRaidArrival</workerClass>
+		<selectionWeightCurve>
+			<points>
+				<li>(300, 1.0)</li>
+				<li>(700, 0.4)</li>
+			</points>
+		</selectionWeightCurve>
+		<textEnemy>A group of {0} from {1} have arrived nearby.</textEnemy>
+		<textFriendly>A group of friendly {0} from {1} have arrived nearby.</textFriendly>
+		<textWillArrive>{0_pawnsPluralDef} will arrive on foot.</textWillArrive>
+		<walkIn>true</walkIn>
+	</PawnsArrivalModeDef>
+
+	<DutyDef>
+		<defName>VREA_CaptureDownedVictimAndLeaveMap</defName>
+		<alwaysShowWeapon>true</alwaysShowWeapon>
+		<thinkNode Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="JobGiver_TakeCombatEnhancingDrug"/>
+				<li Class="VREArchon.JobGiver_CaptureDownedVictimAndLeaveMap"/>
+				<li Class="JobGiver_AIFightEnemies">
+					<targetAcquireRadius>65</targetAcquireRadius>
+					<targetKeepRadius>72</targetKeepRadius>
+				</li>
+				<li Class="VREArchon.JobGiver_CaptureDownedVictimAndLeaveMap"/>
+				<li Class="JobGiver_AITrashColonyClose"/>
+				<li Class="VREArchon.JobGiver_CaptureDownedVictimAndLeaveMap"/>
+				<li Class="JobGiver_AITrashBuildingsDistant"/>
+				<li Class="VREArchon.JobGiver_CaptureDownedVictimAndLeaveMap"/>
+				<li Class="JobGiver_AIGotoNearestHostile"/>
+				<li Class="VREArchon.JobGiver_CaptureDownedVictimAndLeaveMap"/>
+				<li Class="JobGiver_AITrashBuildingsDistant">
+					<attackAllInert>true</attackAllInert>
+				</li>
+				<li Class="VREArchon.JobGiver_CaptureDownedVictimAndLeaveMap"/>
+				<li Class="JobGiver_AISapper">
+					<canMineNonMineables>false</canMineNonMineables>
+				</li>
+				<li Class="VREArchon.JobGiver_CaptureDownedVictimAndLeaveMap"/>
+			</subNodes>
+		</thinkNode>
+	</DutyDef>
+</Defs>

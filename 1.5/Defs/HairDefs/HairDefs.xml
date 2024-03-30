@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<StyleItemCategoryDef>
+	  <defName>VRE_ArchonHairs</defName>
+	  <label>archon</label>
+	</StyleItemCategoryDef>
+
+	<HairDef Name="VRE_ArchonHairBase" Abstract="true">
+		<styleGender>Any</styleGender>
+		<requiredGene>VRE_DreadHair</requiredGene>
+		<category>VRE_ArchonHairs</category>
+		<styleTags>
+			<li>VRE_ArchonHairs</li>
+			<li>Shaved</li>
+			<li>Urban</li>
+			<li>Punk</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>Soldier</li>
+			<li>HairShort</li>
+			
+		</styleTags>
+	</HairDef>
+
+	<HairDef ParentName="VRE_ArchonHairBase">
+		<defName>VRE_Hair_Constant</defName>
+		<label>constant</label>
+		<texPath>Things/Pawn/Hairstyles/Constant</texPath>
+	</HairDef>
+	<HairDef ParentName="VRE_ArchonHairBase">
+		<defName>VRE_Hair_Cosmos</defName>
+		<label>cosmos</label>
+		<texPath>Things/Pawn/Hairstyles/Cosmos</texPath>
+	</HairDef>
+	<HairDef ParentName="VRE_ArchonHairBase">
+		<defName>VRE_Hair_Exoplanet</defName>
+		<label>exoplanet</label>
+		<texPath>Things/Pawn/Hairstyles/Exoplanet</texPath>
+	</HairDef>
+	<HairDef ParentName="VRE_ArchonHairBase">
+		<defName>VRE_Hair_Expanse</defName>
+		<label>expanse</label>
+		<texPath>Things/Pawn/Hairstyles/Expanse</texPath>
+	</HairDef>
+	<HairDef ParentName="VRE_ArchonHairBase">
+		<defName>VRE_Hair_Horizon</defName>
+		<label>horizon</label>
+		<texPath>Things/Pawn/Hairstyles/Horizon</texPath>
+	</HairDef>
+	<HairDef ParentName="VRE_ArchonHairBase">
+		<defName>VRE_Hair_Nebula</defName>
+		<label>nebula</label>
+		<texPath>Things/Pawn/Hairstyles/Nebula</texPath>
+	</HairDef>
+	<HairDef ParentName="VRE_ArchonHairBase">
+		<defName>VRE_Hair_Neutron</defName>
+		<label>neutron</label>
+		<texPath>Things/Pawn/Hairstyles/Neutron</texPath>
+	</HairDef>
+	<HairDef ParentName="VRE_ArchonHairBase">
+		<defName>VRE_Hair_Quasar</defName>
+		<label>quasar</label>
+		<texPath>Things/Pawn/Hairstyles/Quasar</texPath>
+	</HairDef>
+	<HairDef ParentName="VRE_ArchonHairBase">
+		<defName>VRE_Hair_Redshift</defName>
+		<label>redshift</label>
+		<texPath>Things/Pawn/Hairstyles/Redshift</texPath>
+	</HairDef>
+	<HairDef ParentName="VRE_ArchonHairBase">
+		<defName>VRE_Hair_Relativity</defName>
+		<label>relativity</label>
+		<texPath>Things/Pawn/Hairstyles/Relativity</texPath>
+	</HairDef>
+	<HairDef ParentName="VRE_ArchonHairBase">
+		<defName>VRE_Hair_Singularity</defName>
+		<label>singularity</label>
+		<texPath>Things/Pawn/Hairstyles/Singularity</texPath>
+	</HairDef>
+
+</Defs>

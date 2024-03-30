@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="FactionBase">
+    <defName>VRE_Archons</defName>
+    <label>archons</label>
+	<pawnSingular>archon</pawnSingular>
+    <pawnsPlural>archons</pawnsPlural>
+    <categoryTag>Archon</categoryTag>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>2500</configurationListOrderPriority>
+    <displayInFactionSelection>false</displayInFactionSelection>
+    <fixedName>Archons</fixedName>
+    <factionIconPath>UI/Icons/FactionIcon/Archons_FactionIcon</factionIconPath>
+    <techLevel>Archotech</techLevel>
+    <allowedCultures><li>Transcendent</li></allowedCultures>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <VRE_Archon>999</VRE_Archon>
+      </xenotypeChances>
+    </xenotypeSet>
+    <permanentEnemy>true</permanentEnemy>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Archon</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <hidden>true</hidden>
+    <rescueesCanJoin>true</rescueesCanJoin>
+    <autoFlee>false</autoFlee>
+	<earliestRaidDays>45</earliestRaidDays>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+        <li>Hyperweave</li>
+        <li>Plasteel</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <allowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Archist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+    </allowedMemes>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Archist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+    </requiredMemes>
+	
+    <raidLootMaker>ArchonRaidLootMaker</raidLootMaker>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+	
+    <pawnGroupMakers>
+      <li>
+        <!-- All types-->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <ArchonWarrior>10</ArchonWarrior>
+        </options>
+      </li>
+    </pawnGroupMakers>
+	
+  </FactionDef>
+  
+  <ThingSetMakerDef>
+    <defName>ArchonRaidLootMaker</defName>
+    <root Class="ThingSetMaker_MarketValue">
+      <fixedParams>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+            <li>Jade</li>
+            <li>ComponentSpacer</li>
+            <li>Gold</li>
+			<li MayRequire="VanillaExpanded.VPsycastsE">VPE_Eltex</li>
+          </thingDefs>
+        </filter>
+      </fixedParams>
+    </root>
+  </ThingSetMakerDef>
+
+</Defs>

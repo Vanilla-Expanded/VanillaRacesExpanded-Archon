@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ToolCapacityDef>
+		<defName>VREA_Sear</defName>
+		<label>bomb</label>
+	</ToolCapacityDef>
+
+	<ManeuverDef>
+		<defName>VREA_Sear</defName>
+		<requiredCapacity>VREA_Sear</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>VREA_Sear</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+	<DamageDef ParentName="CutBase">
+		<defName>VREA_Sear</defName>
+		<label>sear</label>
+		<workerClass>DamageWorker_Cut</workerClass>
+		<deathMessage>{0} has been seared to death.</deathMessage>
+		<impactSoundType>VREA_MeleeHit_BladelinkArchoblade</impactSoundType>
+		<armorCategory IsNull="True"/>
+		<hediff>VREA_Sear</hediff>
+		<hediffSkin>VREA_Sear</hediffSkin>
+		<hediffSolid>VREA_Sear</hediffSolid>
+	</DamageDef>
+
+
+  <HediffDef ParentName="InjuryBase">
+    <defName>VREA_Sear</defName>
+    <label>sear</label>
+    <labelNoun>a sear</labelNoun>
+    <description>A sear.</description>
+	<hediffClass>VREArchon.Hediff_Sear</hediffClass>
+	<displayWound>true</displayWound>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>bandaged</labelTendedWell>
+        <labelTendedWellInner>sutured</labelTendedWellInner>
+        <labelSolidTendedWell>set</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.15</infectionChance>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>sear scar</permanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.0125</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+      <bleedRate>0.06</bleedRate>
+      <canMerge>false</canMerge>
+      <destroyedLabel>Seared off</destroyedLabel>
+      <destroyedOutLabel>Seared out</destroyedOutLabel>
+    </injuryProps>
+  </HediffDef>
+  
+	<ImpactSoundTypeDef>
+		<defName>VREA_MeleeHit_BladelinkArchoblade</defName>
+		<soundDef>VREA_MeleeHit_BladelinkArchoblade</soundDef>
+	</ImpactSoundTypeDef>
+
+</Defs>

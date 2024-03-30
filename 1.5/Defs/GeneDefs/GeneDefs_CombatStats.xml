@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>VRE_FastMeleeHitter</defName>
+		<label>fast melee hitter</label>
+		<description>Carriers of this gene attack much quicker in close-quarters combat. Extra-fast muscle fibers make their strikes much faster.</description>
+		<statFactors>
+			<VEF_MeleeAttackSpeedFactor>1.25</VEF_MeleeAttackSpeedFactor>
+		</statFactors>
+		<exclusionTags>
+			<li>MeleeAttackSpeed</li>
+		</exclusionTags>
+		<iconPath>UI/Icons/Genes/Gene_MeleeHitterFast</iconPath>
+		<displayCategory>Violence</displayCategory>
+		<displayOrderInCategory>1000</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+	</GeneDef>
+	<GeneDef>
+		<defName>VRE_SlowMeleeHitter</defName>
+		<label>slow melee hitter</label>
+		<description>Carriers of this gene attack significantly slower in close-quarters combat. Weak muscle fibers make their strikes much slower.</description>
+		<statFactors>
+			<VEF_MeleeAttackSpeedFactor>0.8</VEF_MeleeAttackSpeedFactor>
+		</statFactors>
+		<exclusionTags>
+			<li>MeleeAttackSpeed</li>
+		</exclusionTags>
+		<iconPath>UI/Icons/Genes/Gene_MeleeHitterSlow</iconPath>
+		<displayCategory>Violence</displayCategory>
+		<displayOrderInCategory>1001</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+	</GeneDef>
+	<GeneDef>
+		<defName>VRE_FastShooter</defName>
+		<label>fast shooter</label>
+		<description>Carriers of this gene have enhanced reflexes, allowing them to fire their ranged weapons significantly faster.</description>
+		<statFactors>
+			<VEF_RangeAttackSpeedFactor>1.25</VEF_RangeAttackSpeedFactor>
+		</statFactors>
+		<exclusionTags>
+			<li>RangedAttackSpeed</li>
+		</exclusionTags>
+		<iconPath>UI/Icons/Genes/Gene_RangedHitterFast</iconPath>
+		<displayCategory>Violence</displayCategory>
+		<displayOrderInCategory>1002</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+	</GeneDef>
+	<GeneDef>
+		<defName>VRE_SlowShooter</defName>
+		<label>slow shooter</label>
+		<description>Carriers of this gene have lowered reflexes and take significantly longer to aim their shots.</description>
+		<statFactors>
+			<VEF_RangeAttackSpeedFactor>0.8</VEF_RangeAttackSpeedFactor>
+		</statFactors>
+		<exclusionTags>
+			<li>RangedAttackSpeed</li>
+		</exclusionTags>
+		<iconPath>UI/Icons/Genes/Gene_RangedHitterSlow</iconPath>
+		<displayCategory>Violence</displayCategory>
+		<displayOrderInCategory>1003</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+	</GeneDef>
+</Defs>
