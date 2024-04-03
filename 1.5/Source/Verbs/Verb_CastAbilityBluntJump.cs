@@ -3,6 +3,7 @@ using RimWorld;
 using UnityEngine;
 using Verse;
 using Verse.AI;
+using static UnityEngine.GraphicsBuffer;
 
 namespace VREArchon
 {
@@ -20,14 +21,16 @@ namespace VREArchon
             return false;
         }
 
-        public static bool DoJump(Pawn pawn, LocalTargetInfo currentTarget, CompApparelReloadable comp, VerbProperties verbProps)
+        public static bool DoJump(Pawn pawn, LocalTargetInfo currentTarget, CompApparelReloadable comp, VerbProperties verbProps,Ability triggeringAbility = null, LocalTargetInfo target = default(LocalTargetInfo), ThingDef pawnFlyerOverride = null)
         {
            
             IntVec3 position = pawn.Position;
             IntVec3 cell = currentTarget.Cell;
             Map map = pawn.Map;
             bool flag = Find.Selector.IsSelected(pawn);
-            PawnJumper pawnFlyer = MakeFlyer(VREA_DefOf.VREA_PawnJumper, pawn, cell, verbProps.flightEffecterDef, verbProps.soundLanding, verbProps.flyWithCarriedThing);
+            PawnJumper pawnFlyer = (PawnJumper)PawnFlyer.MakeFlyer(VREA_DefOf.VREA_PawnJumper, pawn, cell, verbProps.flightEffecterDef, verbProps.soundLanding, verbProps.flyWithCarriedThing, null, triggeringAbility, target);
+
+            //PawnJumper pawnFlyer = MakeFlyer(VREA_DefOf.VREA_PawnJumper, pawn, cell, verbProps.flightEffecterDef, verbProps.soundLanding, verbProps.flyWithCarriedThing);
             if (pawnFlyer != null)
             {
                 FleckMaker.ThrowDustPuff(position.ToVector3Shifted() + Gen.RandomHorizontalVector(0.5f), map, 2f);
