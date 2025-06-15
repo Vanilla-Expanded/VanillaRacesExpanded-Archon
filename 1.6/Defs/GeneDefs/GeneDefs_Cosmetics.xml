@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- Ears -->
+	<GeneDef ParentName="GeneEarsBase">
+		<defName>VRE_SerratedEars</defName>
+		<label>serrated ears</label>
+		<selectionWeight>0</selectionWeight>
+		<description>Carriers of this gene have long, serrated ears.</description>
+		<iconPath>UI/Icons/Genes/Gene_EarSerrated</iconPath>
+		
+		 <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/SerratedEars/SerratedEars</texPath>
+        <colorType>Skin</colorType>
+        <parentTagDef>Head</parentTagDef>
+        <useSkinShader>true</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <defaultData>
+            <layer>70</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+		
+	</GeneDef>
+	
+	<!-- Misc -->
+	
+	<GeneDef>
+		<defName>VRE_FacialSpots</defName>
+		<label>facial spots</label>
+		
+		<description>Carriers of this gene have small pigmentation spots on their face.</description>
+		<biostatCpx>1</biostatCpx>
+		
+		<iconPath>UI/Icons/Genes/Gene_FacialSpots</iconPath>
+		
+		 <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <colorType>Skin</colorType>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPaths>
+      <li>Things/Pawn/Humanlike/HeadAttachments/FacialSpots/FacialSpotsA</li>
+				<li>Things/Pawn/Humanlike/HeadAttachments/FacialSpots/FacialSpotsB</li>
+				<li>Things/Pawn/Humanlike/HeadAttachments/FacialSpots/FacialSpotsC</li>
+        </texPaths>
+        <visibleFacing>
+          <li>East</li>
+          <li>South</li>
+          <li>West</li>
+        </visibleFacing>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+		
+	</GeneDef>
+	
+	<!-- Hair -->
+	
+	<GeneDef ParentName="GeneHairStyleBase">
+		<defName>VRE_DreadHair</defName>
+		<label>dread hair</label>
+		<description>Carriers of this gene grow hair that naturally forms thick dreadlocks.</description>
+		<iconPath>UI/Icons/Genes/Gene_DreadHair</iconPath>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>VRE_ArchonHairs</li>
+			</tags>
+		</hairTagFilter>
+	</GeneDef>
+	
+	
+	
+	
+</Defs>

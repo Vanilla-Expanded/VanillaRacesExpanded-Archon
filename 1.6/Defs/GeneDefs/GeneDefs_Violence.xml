@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef ParentName="GeneAggressionBase">
+		<defName>VRE_Aggression_ExtremelyAggressive</defName>
+		<label>extremely aggressive</label>
+		<description>Carriers of this gene are incredibly aggressive and are offended by almost anything. They will always respond to insults and slights with a social fight, and will not hesitate to use their melee weapons to get their point across. Mental breaks are always violent.</description>
+		<iconPath>UI/Icons/Genes/Gene_ExtremelyAggressive</iconPath>
+		<aggroMentalBreakSelectionChanceFactor>999</aggroMentalBreakSelectionChanceFactor>
+		<prisonBreakMTBFactor>0.2</prisonBreakMTBFactor>
+		<displayOrderInCategory>21</displayOrderInCategory>
+		<customEffectDescriptions>
+			<li>Social fight guaranteed on insult or slight.</li>
+			<li>Will use weapons in social fight.</li>
+		</customEffectDescriptions>
+		<biostatMet>5</biostatMet>
+		<exclusionTags>
+			<li>Aggressive</li>
+		</exclusionTags>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>aggro</symbol>
+				</li>
+				<li>
+					<symbol>hate</symbol>
+				</li>
+				<li>
+					<symbol>fight</symbol>
+				</li>
+				<li>
+					<symbol>destro</symbol>
+				</li>
+				<li>
+					<symbol>barb</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>fighter</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+</Defs>

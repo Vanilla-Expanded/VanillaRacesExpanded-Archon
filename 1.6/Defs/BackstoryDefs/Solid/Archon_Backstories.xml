@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--============================== Archon adulthood backstories ============================-->
+
+<BackstoryDef>
+    <defName>VREA_VoidStrider</defName>
+    <identifier>VoidStrider</identifier>
+    <slot>Adulthood</slot>
+    <title>void strider</title>
+    <titleShort>strider</titleShort>
+    <baseDesc>[PAWN_nameDef] wandered the depths of the dimensionless void, harnessing the energies within. As one of the first to be reshaped by the archotech, [PAWN_pronoun] quickly mastered the art of capturing souls.</baseDesc>
+    <skillGains>
+      <Shooting>5</Shooting>
+      <Melee>5</Melee>
+      <Intellectual>3</Intellectual>
+      <Social>-2</Social>
+      <Artistic>2</Artistic>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_DimensionalSmith</defName>
+    <identifier>DimensionalSmith</identifier>
+    <slot>Adulthood</slot>
+    <title>dimensional smith</title>
+    <titleShort>smith</titleShort>
+    <baseDesc>[PAWN_nameDef] crafted weapons using the energies of the void. Forged from the very fabric of their dimension, [PAWN_pronoun] became a master of crafting the most lethal weapons for the Archons.</baseDesc>
+    <skillGains>
+      <Crafting>8</Crafting>
+      <Melee>4</Melee>
+      <Intellectual>3</Intellectual>
+      <Construction>2</Construction>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_VoidWhisperer</defName>
+    <identifier>VoidWhisperer</identifier>
+    <slot>Adulthood</slot>
+    <title>void whisperer</title>
+    <titleShort>whisperer</titleShort>
+    <baseDesc>[PAWN_nameDef] communicated with the archotech, channelling its intentions and translating them to the Archons. These communions took a toll, leaving [PAWN_objective] detached from the physical realm.</baseDesc>
+    <skillGains>
+      <Intellectual>6</Intellectual>
+      <Social>5</Social>
+      <Artistic>2</Artistic>
+      <Shooting>-3</Shooting>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_NexusGuard</defName>
+    <identifier>NexusGuard</identifier>
+    <slot>Adulthood</slot>
+    <title>nexus guard</title>
+    <titleShort>guard</titleShort>
+    <baseDesc>Tasked with guarding the portals linking dimensions, [PAWN_nameDef] stood watch, ensuring no intruders threatened their realm and mastering both blade and bullet.</baseDesc>
+    <skillGains>
+      <Shooting>6</Shooting>
+      <Melee>6</Melee>
+      <Construction>3</Construction>
+      <Social>-5</Social>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_AstralHunter</defName>
+    <identifier>AstralHunter</identifier>
+    <slot>Adulthood</slot>
+    <title>astral hunter</title>
+    <titleShort>hunter</titleShort>
+    <baseDesc>[PAWN_nameDef] prowled the stars, kidnapping beings from various planets. Skilled in stealth and surprise, [PAWN_pronoun] was the embodiment of fear for many civilizations.</baseDesc>
+    <skillGains>
+      <Shooting>7</Shooting>
+      <Melee>5</Melee>
+      <Animals>3</Animals>
+      <Intellectual>-2</Intellectual>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_VoidPhilosopher</defName>
+    <identifier>VoidPhilosopher</identifier>
+    <slot>Adulthood</slot>
+    <title>void philosopher</title>
+    <titleShort>philosopher</titleShort>
+    <baseDesc>Seeking answers within the endless void, [PAWN_nameDef] became a seeker of truths. Delving deep into existential questions, [PAWN_pronoun] sought to understand the Archons' place in the universe.</baseDesc>
+    <skillGains>
+      <Intellectual>8</Intellectual>
+      <Artistic>4</Artistic>
+      <Social>3</Social>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_StellarAgriculturist</defName>
+    <identifier>StellarAgriculturist</identifier>
+    <slot>Adulthood</slot>
+    <title>stellar agriculturist</title>
+    <titleShort>agriculturist</titleShort>
+    <baseDesc>[PAWN_nameDef] nurtured strange crops, born from the void's energies. With [PAWN_possessive] knowledge, Archon colonies thrived, drawing sustenance from the very fabric of their dimension.</baseDesc>
+    <skillGains>
+      <Plants>8</Plants>
+      <Cooking>4</Cooking>
+      <Intellectual>3</Intellectual>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_HarmonicTuner</defName>
+    <identifier>HarmonicTuner</identifier>
+    <slot>Adulthood</slot>
+    <title>harmonic tuner</title>
+    <titleShort>tuner</titleShort>
+    <baseDesc>[PAWN_nameDef] worked to maintain the balance of the Archons' dimension. Using unique instruments, [PAWN_pronoun] harmonized the energies, ensuring stability in their otherwise chaotic realm.</baseDesc>
+    <skillGains>
+      <Artistic>7</Artistic>
+      <Intellectual>5</Intellectual>
+      <Construction>3</Construction>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_StellarCartographer</defName>
+    <identifier>StellarCartographer</identifier>
+    <slot>Adulthood</slot>
+    <title>stellar cartographer</title>
+    <titleShort>cartographer</titleShort>
+    <baseDesc>In the vast expanses of the alternate dimension, [PAWN_nameDef] mapped the unseen energies and pathways. Every pulsar, every black hole, every nebula, [PAWN_pronoun] documented, ensuring the Archons never lost their way.</baseDesc>
+    <skillGains>
+      <Intellectual>8</Intellectual>
+      <Artistic>4</Artistic>
+      <Construction>2</Construction>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_VoidHarmonizer</defName>
+    <identifier>VoidHarmonizer</identifier>
+    <slot>Adulthood</slot>
+    <title>void harmonizer</title>
+    <titleShort>harmonizer</titleShort>
+    <baseDesc>[PAWN_nameDef] was an artist of the ethereal, composing symphonies that resonated with the very fabric of the void. [PAWN_pronoun] brought solace and introspection to the Archons, connecting them to their lost past.</baseDesc>
+    <skillGains>
+      <Artistic>8</Artistic>
+      <Social>4</Social>
+      <Intellectual>2</Intellectual>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_EtherealAgriculturist</defName>
+    <identifier>EtherealAgriculturist</identifier>
+    <slot>Adulthood</slot>
+    <title>ethereal agriculturist</title>
+    <titleShort>agriculturist</titleShort>
+    <baseDesc>On the spectral planes of their realm, [PAWN_nameDef] cultivated crops imbued with the energies of the void. [PAWN_pronoun] nourished the Archons, ensuring they had sustenance both physical and ethereal.</baseDesc>
+    <skillGains>
+      <Plants>8</Plants>
+      <Intellectual>3</Intellectual>
+      <Cooking>3</Cooking>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_DimensionalPhilosopher</defName>
+    <identifier>DimensionalPhilosopher</identifier>
+    <slot>Adulthood</slot>
+    <title>dimensional philosopher</title>
+    <titleShort>philosopher</titleShort>
+    <baseDesc>[PAWN_nameDef] pondered the existence of the Archons and the nature of their captivity. Through introspection and debate, [PAWN_pronoun] sought to uncover the purpose and meaning behind their existence.</baseDesc>
+    <skillGains>
+      <Intellectual>8</Intellectual>
+      <Social>4</Social>
+      <Artistic>2</Artistic>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_VoidMediator</defName>
+    <identifier>VoidMediator</identifier>
+    <slot>Adulthood</slot>
+    <title>void mediator</title>
+    <titleShort>mediator</titleShort>
+    <baseDesc>In a society of warriors and mystics, disputes were inevitable. [PAWN_nameDef] served as a mediator, employing deep understanding of Archon customs and the intricate dance of dimensional politics.</baseDesc>
+    <skillGains>
+      <Social>8</Social>
+      <Intellectual>4</Intellectual>
+      <Artistic>2</Artistic>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_VoidVanguard</defName>
+    <identifier>VoidVanguard</identifier>
+    <slot>Adulthood</slot>
+    <title>void vanguard</title>
+    <titleShort>vanguard</titleShort>
+    <baseDesc>[PAWN_nameDef] was among the first to breach portals into unknown dimensions. Leading the charge, [PAWN_pronoun] scouted hostile realms, ensuring a foothold for Archon forces that followed.</baseDesc>
+    <skillGains>
+      <Shooting>6</Shooting>
+      <Melee>6</Melee>
+      <Construction>2</Construction>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_EtherealAssassin</defName>
+    <identifier>EtherealAssassin</identifier>
+    <slot>Adulthood</slot>
+    <title>ethereal assassin</title>
+    <titleShort>assassin</titleShort>
+    <baseDesc>Moving silently through the void's shadows, [PAWN_nameDef] was an unseen threat. Trained to eliminate high-profile targets, [PAWN_pronoun] struck fear into the hearts of those who defied the Archons.</baseDesc>
+    <skillGains>
+      <Shooting>7</Shooting>
+      <Melee>5</Melee>
+      <Animals>2</Animals>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_DimensionalStrategist</defName>
+    <identifier>DimensionalStrategist</identifier>
+    <slot>Adulthood</slot>
+    <title>dimensional strategist</title>
+    <titleShort>strategist</titleShort>
+    <baseDesc>[PAWN_nameDef] excelled in the art of multi-dimensional warfare. Tasked with orchestrating vast invasions, [PAWN_pronoun] turned the tide of battles across countless realities.</baseDesc>
+    <skillGains>
+      <Intellectual>7</Intellectual>
+      <Shooting>4</Shooting>
+      <Social>3</Social>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_WarpBladesman</defName>
+    <identifier>WarpBladesman</identifier>
+    <slot>Adulthood</slot>
+    <title>warp bladesman</title>
+    <titleShort>bladesman</titleShort>
+    <baseDesc>[PAWN_nameDef] was a master of the warp blade, a weapon that cuts through dimensions. Honed by relentless training, [PAWN_pronoun] was unmatched in close-quarters combat.</baseDesc>
+    <skillGains>
+      <Melee>8</Melee>
+      <Construction>4</Construction>
+      <Animals>2</Animals>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_VoidshieldGuardian</defName>
+    <identifier>VoidshieldGuardian</identifier>
+    <slot>Adulthood</slot>
+    <title>voidshield guardian</title>
+    <titleShort>guardian</titleShort>
+    <baseDesc>Tasked with defending Archon strongholds, [PAWN_nameDef] wielded shields that absorbed the very energies of the void. Under [PAWN_possessive] watch, no enemy ever breached [PAWN_possessive] post.</baseDesc>
+    <skillGains>
+      <Melee>6</Melee>
+      <Construction>6</Construction>
+      <Shooting>2</Shooting>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_ArchohavenArchitect</defName>
+    <identifier>ArchohavenArchitect</identifier>
+    <slot>Adulthood</slot>
+    <title>archohaven architect</title>
+    <titleShort>architect</titleShort>
+    <baseDesc>Whispered legends tell of [PAWN_nameDef], a builder of the elusive archohavens. Using knowledge lost to most, [PAWN_pronoun] shaped gateways to realms unfathomable, cloaked in secrets even other Archons could scarcely grasp.</baseDesc>
+    <skillGains>
+      <Construction>8</Construction>
+      <Intellectual>6</Intellectual>
+      <Artistic>4</Artistic>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_DimensionalWarden</defName>
+    <identifier>DimensionalWarden</identifier>
+    <slot>Adulthood</slot>
+    <title>dimensional warden</title>
+    <titleShort>warden</titleShort>
+    <baseDesc>Within the shimmering veils of the archohavens, [PAWN_nameDef] stood guard. Tasked with keeping the sanctity of these mysterious realms, [PAWN_pronoun] navigated the thin line between reality and the unimaginable, ensuring no unwanted entity could intrude.</baseDesc>
+    <skillGains>
+      <Melee>6</Melee>
+      <Construction>5</Construction>
+      <Shooting>3</Shooting>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_VoidHarmonizer2</defName>
+    <identifier>VoidHarmonizer</identifier>
+    <slot>Adulthood</slot>
+    <title>void harmonizer</title>
+    <titleShort>harmonizer</titleShort>
+    <baseDesc>With a touch as light as a whisper, [PAWN_nameDef] maintained the delicate balance of the archohavens. [PAWN_pronoun] sang to the energies of the void, ensuring the portals remained stable and hidden, their locations a secret even to the stars themselves.</baseDesc>
+    <skillGains>
+      <Artistic>7</Artistic>
+      <Construction>6</Construction>
+      <Intellectual>3</Intellectual>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_EclipsedGeneral</defName>
+    <identifier>EclipsedGeneral</identifier>
+    <slot>Adulthood</slot>
+    <title>eclipsed general</title>
+    <titleShort>general</titleShort>
+    <baseDesc>From the void's darkest corner, [PAWN_nameDef] emerged, an unmatched tactician. [PAWN_pronoun] led legions of Archons in their most pivotal campaigns, always a shadowy figure on the battlefield, directing the dance of war with inscrutable brilliance.</baseDesc>
+    <skillGains>
+      <Shooting>6</Shooting>
+      <Intellectual>7</Intellectual>
+      <Social>5</Social>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_AstralVanguard</defName>
+    <identifier>AstralVanguard</identifier>
+    <slot>Adulthood</slot>
+    <title>astral vanguard</title>
+    <titleShort>vanguard</titleShort>
+    <baseDesc>[PAWN_nameDef] was the first into the fray and the last to retreat. As the leader of the Archon's elite vanguard, [PAWN_pronoun] carved paths through dimensions, leading the charge against insurmountable odds with unwavering resolve.</baseDesc>
+    <skillGains>
+      <Melee>8</Melee>
+      <Shooting>6</Shooting>
+      <Intellectual>4</Intellectual>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_CelestialStrategist</defName>
+    <identifier>CelestialStrategist</identifier>
+    <slot>Adulthood</slot>
+    <title>celestial strategist</title>
+    <titleShort>strategist</titleShort>
+    <baseDesc>Wielding knowledge from countless realms, [PAWN_nameDef] masterminded the Archons' grandest schemes. [PAWN_possessive] strategies were as intricate as constellations, leaving foes in awe and despair in equal measure.</baseDesc>
+    <skillGains>
+      <Intellectual>8</Intellectual>
+      <Social>6</Social>
+      <Shooting>4</Shooting>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_VoidMarauder</defName>
+    <identifier>VoidMarauder</identifier>
+    <slot>Adulthood</slot>
+    <title>void marauder</title>
+    <titleShort>marauder</titleShort>
+    <baseDesc>Leading from the front lines, [PAWN_nameDef] was a force of chaos amidst the Archon hierarchy. With a penchant for audacious assaults and a thirst for the thrill of battle, [PAWN_pronoun] spearheaded invasions that struck fear into the heart of galaxies.</baseDesc>
+    <skillGains>
+      <Shooting>8</Shooting>
+      <Melee>6</Melee>
+      <Social>4</Social>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_DimensionalNomad</defName>
+    <identifier>DimensionalNomad</identifier>
+    <slot>Adulthood</slot>
+    <title>dimensional nomad</title>
+    <titleShort>nomad</titleShort>
+    <baseDesc>[PAWN_nameDef] wandered through dimensions, always seeking, always exploring. This endless journey instilled in [PAWN_objective] a keen sense of survival, a sharp mind, and unparalleled adaptability.</baseDesc>
+    <skillGains>
+      <Intellectual>6</Intellectual>
+      <Animals>3</Animals>
+      <Construction>4</Construction>
+      <Plants>2</Plants>
+      <Shooting>3</Shooting>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_HarmonicArtisan</defName>
+    <identifier>HarmonicArtisan</identifier>
+    <slot>Adulthood</slot>
+    <title>harmonic artisan</title>
+    <titleShort>artisan</titleShort>
+    <baseDesc>With a deep connection to the cosmic energies, [PAWN_nameDef] crafted artifacts of otherworldly beauty. [PAWN_possessive] works resonated with the essence of dimensions, requiring both artistry and intellect.</baseDesc>
+    <skillGains>
+      <Artistic>7</Artistic>
+      <Intellectual>4</Intellectual>
+      <Crafting>5</Crafting>
+      <Construction>2</Construction>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_OmnipotentGardener</defName>
+    <identifier>OmnipotentGardener</identifier>
+    <slot>Adulthood</slot>
+    <title>omnipotent gardener</title>
+    <titleShort>gardener</titleShort>
+    <baseDesc>[PAWN_nameDef] had a touch that could make even the most barren dimension bloom. [PAWN_possessive] knowledge of botany was unparalleled, as [PAWN_pronoun] cultivated plants that melded realities.</baseDesc>
+    <skillGains>
+      <Plants>8</Plants>
+      <Intellectual>5</Intellectual>
+      <Medicine>4</Medicine>
+      <Construction>1</Construction>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_CelestialDiplomat</defName>
+    <identifier>CelestialDiplomat</identifier>
+    <slot>Adulthood</slot>
+    <title>celestial diplomat</title>
+    <titleShort>diplomat</titleShort>
+    <baseDesc>[PAWN_nameDef] acted as the Archon's voice, negotiating with interdimensional beings. With every conversation, [PAWN_pronoun] masterfully balanced the scales between peace and power, securing the Archon's place in the cosmic order.</baseDesc>
+    <skillGains>
+      <Social>8</Social>
+      <Intellectual>6</Intellectual>
+      <Animals>4</Animals>
+      <Shooting>3</Shooting>
+      <Melee>2</Melee>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_VoidFarmer</defName>
+    <identifier>VoidFarmer</identifier>
+    <slot>Adulthood</slot>
+    <title>void farmer</title>
+    <titleShort>farmer</titleShort>
+    <baseDesc>On the fringes of the Archon realm, [PAWN_nameDef] cultivated crops in the emptiness of the void. Harnessing the energies of the cosmos, [PAWN_pronoun] nourished and grew otherworldly flora with [PAWN_possessive] unique techniques.</baseDesc>
+    <skillGains>
+      <Plants>8</Plants>
+      <Cooking>5</Cooking>
+      <Medicine>4</Medicine>
+      <Intellectual>3</Intellectual>
+      <Construction>2</Construction>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_StarWhisperer</defName>
+    <identifier>StarWhisperer</identifier>
+    <slot>Adulthood</slot>
+    <title>star whisperer</title>
+    <titleShort>whisperer</titleShort>
+    <baseDesc>Bound to the cosmos, [PAWN_nameDef] had a unique affinity for understanding celestial bodies. [PAWN_pronoun] communicated with stars, gleaning knowledge about the universe and its mysterious workings.</baseDesc>
+    <skillGains>
+      <Intellectual>7</Intellectual>
+      <Animals>5</Animals>
+      <Social>6</Social>
+      <Medicine>4</Medicine>
+      <Artistic>3</Artistic>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_DimensionalArtisan</defName>
+    <identifier>DimensionalArtisan</identifier>
+    <slot>Adulthood</slot>
+    <title>dimensional artisan</title>
+    <titleShort>artisan</titleShort>
+    <baseDesc>[PAWN_nameDef] was revered as an architect of the abstract, bending the very fabric of dimensions to [PAWN_possessive] will. [PAWN_pronoun] constructed monuments that defied comprehension, merging beauty with function in unimaginable ways.</baseDesc>
+    <skillGains>
+      <Construction>6</Construction>
+      <Artistic>7</Artistic>
+      <Intellectual>5</Intellectual>
+      <Crafting>4</Crafting>
+      <Plants>3</Plants>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_EltexScholar</defName>
+    <identifier>EltexScholar</identifier>
+    <slot>Adulthood</slot>
+    <title>eltex scholar</title>
+    <titleShort>scholar</titleShort>
+    <baseDesc>From a young age, [PAWN_nameDef] was obsessed with the mysteries of eltex. [PAWN_pronoun] dedicated [PAWN_possessive] life to studying its properties and potential applications, becoming one of the foremost experts in its psychic-enhancing capabilities.</baseDesc>
+    <skillGains>
+      <Intellectual>7</Intellectual>
+      <Medicine>4</Medicine>
+      <Mining>3</Mining>
+      <Social>4</Social>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_EltexAlchemist</defName>
+    <identifier>EltexAlchemist</identifier>
+    <slot>Adulthood</slot>
+    <title>eltex alchemist</title>
+    <titleShort>alchemist</titleShort>
+    <baseDesc>Using advanced techniques, [PAWN_nameDef] learned to harness and refine eltex into potent concoctions. These brews could amplify psychic abilities or be used as valuable trade items, making [PAWN_nameDef] sought after in various dimensions.</baseDesc>
+    <skillGains>
+      <Intellectual>6</Intellectual>
+      <Cooking>4</Cooking>
+      <Crafting>5</Crafting>
+      <Social>3</Social>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_EltexHunter</defName>
+    <identifier>EltexHunter</identifier>
+    <slot>Adulthood</slot>
+    <title>eltex hunter</title>
+    <titleShort>hunter</titleShort>
+    <baseDesc>[PAWN_nameDef] had a rare gift - the innate ability to sense eltex across dimensions. As an eltex hunter, [PAWN_pronoun] journeyed through unstable realities, braving unimaginable dangers to retrieve this invaluable resource for the Archons.</baseDesc>
+    <skillGains>
+      <Shooting>6</Shooting>
+      <Mining>8</Mining>
+      <Animals>3</Animals>
+      <Intellectual>5</Intellectual>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_ArchonPsyLord</defName>
+    <identifier>ArchonPsyLord</identifier>
+    <slot>Adulthood</slot>
+    <title>psy-lord</title>
+    <titleShort>psy-lord</titleShort>
+    <baseDesc>As a Psy-Lord, [PAWN_nameDef] wielded an unparalleled mastery over psychic energies. [PAWN_pronoun] trained legions of Archons in the ancient arts, and with a mere thought, [PAWN_pronoun] could reshape realities or bend minds to [PAWN_possessive] will.</baseDesc>
+    <skillGains>
+      <Intellectual>8</Intellectual>
+      <Social>6</Social>
+      <Shooting>4</Shooting>
+      <Medicine>4</Medicine>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_ArchonMindweaver</defName>
+    <identifier>ArchonMindweaver</identifier>
+    <slot>Adulthood</slot>
+    <title>mindweaver</title>
+    <titleShort>mindweaver</titleShort>
+    <baseDesc>[PAWN_nameDef] delved deep into the intricacies of the psyche. As a Mindweaver, [PAWN_pronoun] had the unique ability to weave thoughts, memories, and emotions, creating intricate tapestries of perception that could enthrall or terrify.</baseDesc>
+    <skillGains>
+      <Intellectual>7</Intellectual>
+      <Social>7</Social>
+      <Artistic>6</Artistic>
+      <Medicine>3</Medicine>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_ArchonDreamseer</defName>
+    <identifier>ArchonDreamseer</identifier>
+    <slot>Adulthood</slot>
+    <title>dreamseer</title>
+    <titleShort>dreamseer</titleShort>
+    <baseDesc>[PAWN_nameDef] was a Dreamseer, an elite psycaster who ventured into the dreamscape. Navigating the ephemeral realms of dream and thought, [PAWN_pronoun] could uncover secrets, deliver messages, or implant suggestions deep within the subconscious mind.</baseDesc>
+    <skillGains>
+      <Intellectual>8</Intellectual>
+      <Social>6</Social>
+      <Artistic>4</Artistic>
+      <Animals>4</Animals>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+
+	<!--============================== Archon childhood backstories ============================-->
+
+<BackstoryDef>
+    <defName>VREA_ArchonDreamchild</defName>
+    <identifier>ArchonDreamchild</identifier>
+    <slot>Childhood</slot>
+    <title>dreamchild</title>
+    <titleShort>dreamchild</titleShort>
+    <baseDesc>From a young age, [PAWN_nameDef] displayed an innate ability to navigate the ethereal realms of dreams. Elders nurtured [PAWN_possessive] gift, teaching [PAWN_objective] to interpret omens and converse with spirits in the dreamscape.</baseDesc>
+    <skillGains>
+      <Intellectual>4</Intellectual>
+      <Social>2</Social>
+      <Artistic>2</Artistic>
+    </skillGains>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_ArchonVoidwalker</defName>
+    <identifier>ArchonVoidwalker</identifier>
+    <slot>Childhood</slot>
+    <title>voidwalker initiate</title>
+    <titleShort>initiate</titleShort>
+    <baseDesc>Exhibiting an uncanny attraction to the void, [PAWN_nameDef] would often wander off to remote, void-touched places. These early experiences imbued [PAWN_objective] with a profound connection to the vast unknown.</baseDesc>
+    <skillGains>
+      <Intellectual>2</Intellectual>
+      <Animals>4</Animals>
+      <Shooting>1</Shooting>
+    </skillGains>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_ArchonNexusborn</defName>
+    <identifier>ArchonNexusborn</identifier>
+    <slot>Childhood</slot>
+    <title>nexusborn</title>
+    <titleShort>nexusborn</titleShort>
+    <baseDesc>Birthed near a powerful Archon nexus, [PAWN_nameDef]'s form resonated with psychic energies. [PAWN_possessive] childhood was marked by heightened sensitivities and precognitive events, making [PAWN_objective] a prodigy among peers.</baseDesc>
+    <skillGains>
+      <Intellectual>4</Intellectual>
+      <Social>3</Social>
+    </skillGains>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_ArchonStarwhisperer</defName>
+    <identifier>ArchonStarwhisperer</identifier>
+    <slot>Childhood</slot>
+    <title>starwhisperer</title>
+    <titleShort>starwhisperer</titleShort>
+    <baseDesc>[PAWN_nameDef] grew up under the guidance of the Archon elders, who taught [PAWN_objective] to decipher the whispers of distant stars. [PAWN_pronoun] developed an astute sense of direction and an understanding of cosmic rhythms.</baseDesc>
+    <skillGains>
+      <Intellectual>3</Intellectual>
+      <Shooting>2</Shooting>
+      <Crafting>1</Crafting>
+    </skillGains>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_ArchonNoviceCasterChild</defName>
+    <identifier>ArchonNoviceCasterChild</identifier>
+    <slot>Childhood</slot>
+    <title>novice caster</title>
+    <titleShort>novice</titleShort>
+    <baseDesc>[PAWN_nameDef] grew up in a secluded enclave of Archon psycasters. While [PAWN_pronoun] was not yet a master, [PAWN_pronoun] practiced regularly, showing promise in manipulating basic psychic forces. Games with peers often involved bending spoons or levitating objects.</baseDesc>
+    <skillGains>
+      <Intellectual>2</Intellectual>
+      <Social>2</Social>
+      <Animals>1</Animals>
+      <Artistic>1</Artistic>
+      <Construction>1</Construction>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_ArchonChildExplorer</defName>
+    <identifier>ArchonChildExplorer</identifier>
+    <slot>Childhood</slot>
+    <title>dimensional explorer</title>
+    <titleShort>explorer</titleShort>
+    <baseDesc>From a young age, [PAWN_nameDef] was curious about the dimensional rifts surrounding Archon habitats. With friends, [PAWN_pronoun] would explore these pockets of reality, learning to navigate the unpredictable terrains and studying the unique flora and fauna.</baseDesc>
+    <skillGains>
+      <Plants>3</Plants>
+      <Animals>2</Animals>
+      <Mining>1</Mining>
+      <Intellectual>1</Intellectual>
+      <Cooking>1</Cooking>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_ArchonStarChild</defName>
+    <identifier>ArchonStarChild</identifier>
+    <slot>Childhood</slot>
+    <title>star-child</title>
+    <titleShort>child</titleShort>
+    <baseDesc>Born amidst the swirling energies of a nebula, [PAWN_nameDef] was attuned to the cosmos from a young age. While other Archon children played in temporal realms, [PAWN_pronoun] gazed at stars, dreaming of distant galaxies and cosmic adventures.</baseDesc>
+    <skillGains>
+      <Intellectual>3</Intellectual>
+      <Animals>2</Animals>
+      <Artistic>1</Artistic>
+      <Social>1</Social>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_ArchonVoidrunner</defName>
+    <identifier>ArchonVoidrunner</identifier>
+    <slot>Childhood</slot>
+    <title>voidrunner</title>
+    <titleShort>runner</titleShort>
+    <baseDesc>[PAWN_nameDef]'s early years were spent racing through the gaps between dimensions. A mischievous child, [PAWN_pronoun] would often slip through cracks in reality, leading [PAWN_possessive] peers on wild chases through time and space.</baseDesc>
+    <skillGains>
+      <Shooting>2</Shooting>
+      <Melee>2</Melee>
+      <Construction>1</Construction>
+      <Plants>1</Plants>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_ArchonNexusScholar</defName>
+    <identifier>ArchonNexusScholar</identifier>
+    <slot>Childhood</slot>
+    <title>nexus scholar</title>
+    <titleShort>scholar</titleShort>
+    <baseDesc>As a nexus scholar, [PAWN_nameDef] spent [PAWN_possessive] formative years studying the ancient connections between dimensions. While [PAWN_possessive] curiosity often led [PAWN_objective] into trouble, it also forged a deep understanding of the Archon's cosmic realm.</baseDesc>
+    <skillGains>
+      <Intellectual>2</Intellectual>
+      <Mining>2</Mining>
+      <Medicine>1</Medicine>
+      <Crafting>1</Crafting>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_ArchonLuminaryApprentice</defName>
+    <identifier>ArchonLuminaryApprentice</identifier>
+    <slot>Childhood</slot>
+    <title>luminary's apprentice</title>
+    <titleShort>apprentice</titleShort>
+    <baseDesc>[PAWN_nameDef] was an apprentice to a luminary, helping with basic tasks in the luminary's workshop. [PAWN_pronoun] spent most days sorting crystals, cleaning tools, and occasionally assisting in simple experiments.</baseDesc>
+    <skillGains>
+      <Crafting>2</Crafting>
+      <Intellectual>1</Intellectual>
+      <Construction>1</Construction>
+      <Plants>1</Plants>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_ArchonDimensionalFarmer</defName>
+    <identifier>ArchonDimensionalFarmer</identifier>
+    <slot>Childhood</slot>
+    <title>dimensional farmer</title>
+    <titleShort>farmer</titleShort>
+    <baseDesc>[PAWN_nameDef] grew up on a farm that produced trans-dimensional crops. [PAWN_pronoun] spent [PAWN_possessive] days tending to the crops and learning about the seasonal shifts in various dimensions.</baseDesc>
+    <skillGains>
+      <Plants>3</Plants>
+      <Animals>2</Animals>
+      <Construction>1</Construction>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_ArchonCrystalCarver</defName>
+    <identifier>ArchonCrystalCarver</identifier>
+    <slot>Childhood</slot>
+    <title>crystal carver</title>
+    <titleShort>carver</titleShort>
+    <baseDesc>From a young age, [PAWN_nameDef] learned the delicate art of carving intricate patterns into various crystals. The crystals were used in daily Archon life for both practical and decorative purposes.</baseDesc>
+    <skillGains>
+      <Artistic>3</Artistic>
+      <Crafting>2</Crafting>
+      <Construction>1</Construction>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_ArchonStrategyProdigy</defName>
+    <identifier>ArchonStrategyProdigy</identifier>
+    <slot>Childhood</slot>
+    <title>strategy prodigy</title>
+    <titleShort>prodigy</titleShort>
+    <baseDesc>[PAWN_nameDef]'s knack for tactics and strategy was evident from an early age. Admitted to a prestigious Archon military academy, [PAWN_pronoun] often played advanced war simulations against [PAWN_possessive] instructors.</baseDesc>
+    <skillGains>
+      <Intellectual>3</Intellectual>
+      <Shooting>1</Shooting>
+      <Melee>1</Melee>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+<BackstoryDef>
+    <defName>VREA_ArchonCadet</defName>
+    <identifier>ArchonCadet</identifier>
+    <slot>Childhood</slot>
+    <title>academy cadet</title>
+    <titleShort>cadet</titleShort>
+    <baseDesc>Even as a child, [PAWN_nameDef] was enrolled in one of the Archon's elite military academies. [PAWN_pronoun] learned discipline, basic combat techniques, and the importance of loyalty to the Archon cause.</baseDesc>
+    <skillGains>
+      <Shooting>2</Shooting>
+      <Melee>2</Melee>
+      <Intellectual>1</Intellectual>
+      <Social>1</Social>
+    </skillGains>
+    <workDisables>None</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories><li>Archon</li></spawnCategories>
+</BackstoryDef>
+
+</Defs>

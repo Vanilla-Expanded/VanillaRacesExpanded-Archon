@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Heads -->
+	<GeneDef>
+		<defName>VRE_Leatherskin</defName>
+		<label>leatherskin</label>
+		<description>Carriers of this gene are covered in a thick, rigged leather, which provides a higher sharp and blunt defense.</description>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>1000</displayOrderInCategory>
+		<iconPath>UI/Icons/Genes/Gene_Leatherskin</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<fur>VRE_Leatherskin</fur>
+		<skinIsHairColor>false</skinIsHairColor>
+		<tattoosVisible>false</tattoosVisible>
+		<renderNodeProperties>
+			<li>
+				<debugLabel>Fur</debugLabel>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Skin</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>
+		<forcedHeadTypes>
+			<li>VRE_Leatherskin_Average_Normal</li>
+			<li>VRE_Leatherskin_Narrow_Normal</li>
+			<li>VRE_Leatherskin_Gaunt_Normal</li>
+			<li>VRE_Leatherskin_Wide_Normal</li>
+			<li>VRE_LeatherskinFemale_Average_Normal</li>
+			<li>VRE_LeatherskinFemale_Narrow_Normal</li>
+			<li>VRE_LeatherskinFemale_Gaunt_Normal</li>
+			<li>VRE_LeatherskinFemale_Wide_Normal</li>
+		</forcedHeadTypes>
+		<exclusionTags>
+			<li>Fur</li>
+		</exclusionTags>
+		<statOffsets>
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		</statOffsets>
+		<missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<useSkinColorForFur>true</useSkinColorForFur>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

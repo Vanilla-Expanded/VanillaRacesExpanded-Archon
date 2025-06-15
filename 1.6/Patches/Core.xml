@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/StatDef[defName="PsychicSensitivity"]/parts</xpath>
+				<value>
+					<li Class="VREArchon.StatPart_PsychicStormWeather"></li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
