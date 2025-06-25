@@ -19,7 +19,7 @@
 			<speed>42</speed>
 		</projectile>
 		<comps>
-			<li Class="VFECore.CompProperties_HomingProjectile">
+			<li Class="VEF.Weapons.CompProperties_HomingProjectile">
 				<homingDistanceFractionPassed>0</homingDistanceFractionPassed>
 				<homingCorrectionTickRate>1</homingCorrectionTickRate>
 				<initialDispersionFromTarget>0</initialDispersionFromTarget>
@@ -45,7 +45,7 @@
 			<speed>32</speed>
 		</projectile>
 		<comps>
-			<li Class="VFECore.CompProperties_HomingProjectile">
+			<li Class="VEF.Weapons.CompProperties_HomingProjectile">
 				<homingDistanceFractionPassed>0</homingDistanceFractionPassed>
 				<homingCorrectionTickRate>1</homingCorrectionTickRate>
 				<initialDispersionFromTarget>0</initialDispersionFromTarget>

@@ -57,7 +57,7 @@
 			<li Class="CompProperties_GeneratedName">
 				<nameMaker>NamerWeaponArchon</nameMaker>
 			</li>
-			<li Class="GraphicCustomization.CompProperties_GraphicCustomization">
+			<li Class="VEF.Graphics.CompProperties_GraphicCustomization">
 				<customizable>true</customizable>
 				<customizationTitle>Archoblade Customization</customizationTitle>
 				<graphics>
@@ -404,7 +404,7 @@
 			<li>WeaponBladelink</li>
 		</thingSetMakerTags>
 		<modExtensions>
-			<li Class="VFECore.ThingDefExtension">
+			<li Class="VEF.Things.ThingDefExtension">
 				<weaponCarryDrawOffsets>
 					<north>
 						<drawOffset>(0.25, 0, 0.1)</drawOffset>

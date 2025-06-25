@@ -61,7 +61,7 @@
     </statBases>
 	<tickerType>Normal</tickerType>
     <comps Inherit="False">
-      <li Class="VFECore.CompProperties_ShieldField">
+      <li Class="VEF.Apparels.CompProperties_ShieldField">
 		<activeAlways>True</activeAlways>
 		<initialEnergyPercentage>1</initialEnergyPercentage>
         <shieldColour>(0.9, 0.9, 0.1)</shieldColour>

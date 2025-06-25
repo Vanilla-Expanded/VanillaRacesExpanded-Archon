@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 		<defName>VPEA_Shortskip</defName>
 		<label>shortskip</label>
 		<description>Teleport the target to a desired position not too far from his starting point. Caster does not need line of sight to destination. Range increases with psychic sensitivity of the caster.</description>
@@ -30,7 +30,7 @@
 				<mustBeSelectable>true</mustBeSelectable>
 				<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
 			</li>
-			<li Class="VFECore.Abilities.TargetingParametersForAoE">
+			<li Class="VEF.Abilities.TargetingParametersForAoE">
 				<canTargetLocations>true</canTargetLocations>
 				<canTargetBlockedLocations>false</canTargetBlockedLocations>
 			</li>
@@ -48,9 +48,9 @@
 				<clamorRadius>10</clamorRadius>
 			</li>
 		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
+	</VEF.Abilities.AbilityDef>
 	
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 		<defName>VREA_PsychicThrow</defName>
 		<label>psychic throw</label>
 		<description>Throw a focused payload of psychic energy, dealing blunt trauma to anything hit by it. Psychic sensitivity increases the amount of projectiles fired in a single burst, hitting several enemies.</description>
@@ -78,14 +78,14 @@
 					<li>VPEA_Shortskip</li>
 				</prerequisites>
 			</li>
-			<li Class="VFECore.Abilities.AbilityExtension_Projectile">
+			<li Class="VEF.Abilities.AbilityExtension_Projectile">
 				<projectile>VREA_PsychicThrow</projectile>
 				<hitFlags>All</hitFlags>
 			</li>
 		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
+	</VEF.Abilities.AbilityDef>
 
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 		<defName>VREA_PsychicWarp</defName>
 		<label>psychic warp</label>
 		<description>Hurl a microscoping multi-dimensional skipgate at a target, nullifying any armor they might have. Warped entities hit by psychic throw will detonate. Psychic sensitivity increases the amount of projectiles fired in a single burst, hitting several enemies.</description>
@@ -112,20 +112,20 @@
 					<li>VREA_PsychicThrow</li>
 				</prerequisites>
 			</li>
-			<li Class="VFECore.Abilities.AbilityExtension_Projectile">
+			<li Class="VEF.Abilities.AbilityExtension_Projectile">
 				<projectile>VREA_PsychicWarp</projectile>
 				<soundOnImpact>VREA_PsychicWarp_Hit</soundOnImpact>
 				<hitFlags>All</hitFlags>
 			</li>
 		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
+	</VEF.Abilities.AbilityDef>
 
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 		<defName>VREA_PsychicLance</defName>
 		<label>psychic lance</label>
 		<description>Toss a large siege lance of psychic energy which generates a chaos skip sphere wherever it hits, skipping everyone under the effect to random nearby locations, inflicting deep cut wounds. Radius of the skip effect increases with Psychic sensitivity of the caster.</description>
 		<iconPath>UI/Psycasts/PsychicLance</iconPath>
-		<abilityClass>VFECore.Abilities.Ability_ShootProjectile</abilityClass>
+		<abilityClass>VEF.Abilities.Ability_ShootProjectile</abilityClass>
 		<requireLineOfSight>false</requireLineOfSight>
 		<castTime>60</castTime>
 		<range>42.9</range>
@@ -147,10 +147,10 @@
 					<li>VREA_PsychicWarp</li>
 				</prerequisites>
 			</li>
-			<li Class="VFECore.Abilities.AbilityExtension_Projectile">
+			<li Class="VEF.Abilities.AbilityExtension_Projectile">
 				<projectile>VREA_PsychicLance</projectile>
 			</li>
 		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
+	</VEF.Abilities.AbilityDef>
 
 </Defs>

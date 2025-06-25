@@ -64,7 +64,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="VanillaPsycastsExpanded">
-      <HintPath>..\..\..\VanillaPsycastsExpanded\1.4\Assemblies\VanillaPsycastsExpanded.dll</HintPath>
+      <HintPath>..\..\..\VanillaPsycastsExpanded\1.6\Assemblies\VanillaPsycastsExpanded.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="VEF">
