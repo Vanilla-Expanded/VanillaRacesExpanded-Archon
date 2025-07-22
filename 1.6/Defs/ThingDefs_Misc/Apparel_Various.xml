@@ -56,8 +56,8 @@
       <Insulation_Heat>22</Insulation_Heat>
       <EquipDelay>4</EquipDelay>
 	  <VEF_EnergyShieldRadiusApparel>2</VEF_EnergyShieldRadiusApparel>
-	  <VEF_EnergyShieldEnergyMaxApparel>5.6</VEF_EnergyShieldEnergyMaxApparel>
-	  <VEF_EnergyShieldRechargeRateApparel>0.12</VEF_EnergyShieldRechargeRateApparel>
+	  <EnergyShieldEnergyMax>5.6</EnergyShieldEnergyMax>
+	  <EnergyShieldRechargeRate>0.12</EnergyShieldRechargeRate>
     </statBases>
 	<tickerType>Normal</tickerType>
     <comps Inherit="False">
@@ -68,9 +68,9 @@
 		<rechargeTicksWhenDepleted>3200</rechargeTicksWhenDepleted>
 		<shieldRadiusStat>VEF_EnergyShieldRadiusApparel</shieldRadiusStat>
         <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
-		<rechargeRateStat>VEF_EnergyShieldRechargeRateApparel</rechargeRateStat>
+		<rechargeRateStat>EnergyShieldRechargeRate</rechargeRateStat>
         <activeSound>BulletShield_Ambience</activeSound>
-		<shieldEnergyMaxStat>VEF_EnergyShieldEnergyMaxApparel</shieldEnergyMaxStat>
+		<shieldEnergyMaxStat>EnergyShieldEnergyMax</shieldEnergyMaxStat>
         <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
       </li>
 	  <li Class="CompProperties_Forbiddable"/>
