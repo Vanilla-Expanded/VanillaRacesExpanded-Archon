@@ -5,4 +5,5 @@
 	<VREA_ReturnsLabel>{0} returns</VREA_ReturnsLabel>
 	<VREA_Returns>{0} returns</VREA_Returns>
 	<VREA.PsychicStormWeatherBonusStatExplanation>Psychic storm bonus</VREA.PsychicStormWeatherBonusStatExplanation>
+	<VRE_NeedsTranscendentToWield>Only transcendent individuals can wield this</VRE_NeedsTranscendentToWield>
 </LanguagData>

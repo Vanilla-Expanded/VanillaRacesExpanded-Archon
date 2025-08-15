@@ -22,7 +22,7 @@ namespace VREArchon
         {
 
 
-            if (recipient.HasActiveGene(VREA_DefOf.VRE_Aggression_ExtremelyAggressive))
+            if (recipient.genes?.HasActiveGene(VREA_DefOf.VRE_Aggression_ExtremelyAggressive)==true)
             {
                 if(__instance.interaction == InteractionDefOf.Insult || __instance.interaction == VREA_DefOf.Slight) {
 

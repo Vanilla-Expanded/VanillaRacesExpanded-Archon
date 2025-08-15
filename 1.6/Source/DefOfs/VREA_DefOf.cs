@@ -12,6 +12,7 @@ namespace VREArchon
 
         public static GeneDef VRE_Aggression_ExtremelyAggressive;
         public static GeneDef VRE_EarlyMaturity;
+        public static GeneDef VRE_Transcendent;
 
         public static XenotypeDef VRE_Archon;
 
@@ -28,6 +29,7 @@ namespace VREArchon
         public static ThingDef VREA_Warp_Mote;
         public static ThingDef VREA_MeleeWeapon_ArchobladeBladelink;
         public static ThingDef VREA_PawnJumper;
+        public static ThingDef VREA_Apparel_Archoplate;
 
         public static WeatherDef VREA_PsychicStorm;
 

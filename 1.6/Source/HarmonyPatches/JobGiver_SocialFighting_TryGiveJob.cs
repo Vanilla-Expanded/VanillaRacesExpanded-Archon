@@ -22,7 +22,7 @@ namespace VREArchon
         {
 
 
-            if (pawn.HasActiveGene(VREA_DefOf.VRE_Aggression_ExtremelyAggressive))
+            if (pawn.genes?.HasActiveGene(VREA_DefOf.VRE_Aggression_ExtremelyAggressive)==true)
             {
                 if (pawn.RaceProps.Humanlike && pawn.WorkTagIsDisabled(WorkTags.Violent))
                 {

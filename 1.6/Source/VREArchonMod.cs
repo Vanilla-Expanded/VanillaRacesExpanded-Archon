@@ -20,10 +20,7 @@ namespace VREArchon
             settings.DoSettingsWindowContents(inRect);
         }
 
-        public override string SettingsCategory()
-        {
-            return Content.Name;
-        }
+        public override string SettingsCategory() => "VRE - Archon";
     }
 
     public class VREArchonSettings : ModSettings
