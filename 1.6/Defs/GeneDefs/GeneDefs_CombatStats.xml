@@ -5,7 +5,7 @@
 		<label>fast melee hitter</label>
 		<description>Carriers of this gene attack much quicker in close-quarters combat. Extra-fast muscle fibers make their strikes much faster.</description>
 		<statFactors>
-			<VEF_MeleeAttackSpeedFactor>1.25</VEF_MeleeAttackSpeedFactor>
+			<MeleeCooldownFactor>0.8</MeleeCooldownFactor>
 		</statFactors>
 		<exclusionTags>
 			<li>MeleeAttackSpeed</li>
@@ -21,7 +21,7 @@
 		<label>slow melee hitter</label>
 		<description>Carriers of this gene attack significantly slower in close-quarters combat. Weak muscle fibers make their strikes much slower.</description>
 		<statFactors>
-			<VEF_MeleeAttackSpeedFactor>0.8</VEF_MeleeAttackSpeedFactor>
+			<MeleeCooldownFactor>1.25</MeleeCooldownFactor>
 		</statFactors>
 		<exclusionTags>
 			<li>MeleeAttackSpeed</li>
