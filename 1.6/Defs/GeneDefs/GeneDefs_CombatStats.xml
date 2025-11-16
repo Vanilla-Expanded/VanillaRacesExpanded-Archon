@@ -37,7 +37,7 @@
 		<label>fast shooter</label>
 		<description>Carriers of this gene have enhanced reflexes, allowing them to fire their ranged weapons significantly faster.</description>
 		<statFactors>
-			<VEF_RangeAttackSpeedFactor>1.25</VEF_RangeAttackSpeedFactor>
+			<RangedCooldownFactor>0.8</RangedCooldownFactor>
 		</statFactors>
 		<exclusionTags>
 			<li>RangedAttackSpeed</li>
@@ -53,7 +53,7 @@
 		<label>slow shooter</label>
 		<description>Carriers of this gene have lowered reflexes and take significantly longer to aim their shots.</description>
 		<statFactors>
-			<VEF_RangeAttackSpeedFactor>0.8</VEF_RangeAttackSpeedFactor>
+			<RangedCooldownFactor>1.25</RangedCooldownFactor>
 		</statFactors>
 		<exclusionTags>
 			<li>RangedAttackSpeed</li>
@@ -64,4 +64,5 @@
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>1</biostatMet>
 	</GeneDef>
+
 </Defs>
