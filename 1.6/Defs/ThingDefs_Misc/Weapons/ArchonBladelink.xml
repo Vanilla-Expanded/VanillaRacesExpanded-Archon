@@ -49,6 +49,8 @@
 		</tradeTags>
 		<weaponClasses>
 			<li>Ultratech</li>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
 		</weaponClasses>
 		<comps>
 			<li Class="CompProperties_BladelinkWeapon">

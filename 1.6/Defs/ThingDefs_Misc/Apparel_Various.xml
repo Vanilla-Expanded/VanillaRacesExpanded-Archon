@@ -27,14 +27,17 @@
 		</tradeTags>
 		<smeltable>false</smeltable>
 		<apparel>
-			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Neck</li>
 				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Item/Equipment/Armor/Archoplate/Archoplate</wornGraphicPath>
 			<layers>
+				<li>Middle</li>
 				<li>Shell</li>
 			</layers>
 			<tags>
@@ -44,6 +47,8 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			 <soundWear>Wear_PowerArmor</soundWear>
+			 <soundRemove>Remove_PowerArmor</soundRemove>
 		</apparel>
 		<statBases>
 			<MarketValue>6250</MarketValue>
