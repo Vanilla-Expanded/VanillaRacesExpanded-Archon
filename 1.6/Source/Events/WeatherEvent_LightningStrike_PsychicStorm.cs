@@ -34,7 +34,7 @@ namespace VREArchon
             boltMesh = LightningBoltMeshPool.RandomBoltMesh;
             if (!strikeLoc.Fogged(map))
             {
-                GenExplosion.DoExplosion(strikeLoc, map, 1.9f, DamageDefOf.Bomb, null, chanceToStartFire: 0);
+                GenExplosion.DoExplosion(strikeLoc, map, 1.9f, DamageDefOf.Bomb, null,25, chanceToStartFire: 0);
                 Vector3 loc = strikeLoc.ToVector3Shifted();
                 for (int i = 0; i < 4; i++)
                 {
